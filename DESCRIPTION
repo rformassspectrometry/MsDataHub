@@ -1,0 +1,21 @@
+Package: msdata2
+Title:  Mass Spectrometry Data on ExperimentHub
+Version: 0.99.0
+Authors@R:
+    person("Laurent", "Gatto",
+           "laurent.gatto@uclouvain.be",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1520-2268"))
+Description: What the package does (one paragraph).
+License: Artistic-2.0
+BugReports: https://support.bioconductor.org/t/msdata2
+Imports:
+    ExperimentHub
+Suggests:
+    ExperimentHubData,
+    testthat (>= 3.0.0)
+biocViews: ExperimentHub
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Config/testthat/edition: 3
