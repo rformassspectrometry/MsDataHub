@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(msdata2)
+library(MsDataHub)
 
-test_check("msdata2")
+test_check("MsDataHub")

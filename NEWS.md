@@ -1,4 +1,4 @@
-# msdata2 0.99.0
+# MsDataHub 0.99.0
 
 NEW FEATURES
 

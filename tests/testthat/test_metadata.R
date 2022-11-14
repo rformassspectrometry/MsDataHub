@@ -6,6 +6,6 @@ test_that("metadata is valid",
         BiocManager::install("ExperimentHubData")
 
     path <- find.package("")
-    metadata <- system.file("extdata", "metadata.csv", package = "msdata2")
+    metadata <- system.file("extdata", "metadata.csv", package = "MsDataHub")
     expect_true(ExperimentHubData::makeExperimentHubMetadata(path, metadata))
 })
