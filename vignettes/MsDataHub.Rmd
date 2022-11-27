@@ -20,9 +20,30 @@ BiocStyle::markdown()
 
 # Available data
 
-- TripleTOF-SWATH
+## TripleTOF-SWATH
 
-- sciex
+- Type: Raw MS data
+- Files: `PestMix1_DDA.mzML` and `PestMix1_SWATH.mzML`
+
+Load with
+
+```{r, eval = FALSE}
+PestMix1_DDA.mzML()
+PestMix1_SWATH.mzML()
+```
+
+## sciex
+
+- Type: Raw MS data
+- Files: `20171016_POOL_POS_1_105-134.mzML` and `20171016_POOL_POS_3_105-134.mzML`
+
+Load with
+
+```{r, eval = FALSE}
+20171016_POOL_POS_1_105-134.mzML()
+20171016_POOL_POS_3_105-134.mzML()
+```
+
 
 # Session information {-}
 
