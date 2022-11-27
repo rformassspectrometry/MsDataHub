@@ -1,0 +1,33 @@
+---
+title: "Mass Spectrometry Data on ExperimentHub"
+author:
+- name: Laurent Gatto
+package: MsDataHub
+output:
+  BiocStyle::html_document:
+    toc_float: true
+vignette: >
+  %\VignetteIndexEntry{Mass Spectrometry Data on ExperimentHub}
+  %\VignetteEngine{knitr::rmarkdown}
+  %%\VignetteKeywords{Mass Spectrometry, MS, MSMS, Proteomics, Metabolomics}
+  %\VignetteEncoding{UTF-8}
+bibiliography: references.bib
+---
+
+```{r style, echo = FALSE, results = 'asis'}
+BiocStyle::markdown()
+```
+
+# Available data
+
+- TripleTOF-SWATH
+
+- sciex
+
+# Session information {-}
+
+```{r sessioninfo, echo=FALSE}
+sessionInfo()
+```
+
+# References {-}
