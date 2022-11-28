@@ -7,7 +7,7 @@ if (!require("msdata"))
 ## files to be copied
 fls <- dir(system.file("sciex", package = "msdata"), full.name = TRUE)
 fls <- fls[basename(fls) %in% c("20171016_POOL_POS_1_105-134.mzML",
-                                "20171016_POOL_POS_3_105-134.mzML"))
+                                "20171016_POOL_POS_3_105-134.mzML")]
 
 ## destination
 destdir <- "../../data/sciex"
