@@ -21,6 +21,10 @@
 ##' The [rpx](https://bioconductor.org/packages/3.16/rpx) package can
 ##' be used to access and download any PRIDE/ProteomeXchange files.
 ##'
+##' @name PXD000001
+##'
+##' @aliases TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz
+##'
 ##' @references
 ##'
 ##' - Vizcaíno J.A. et al. *ProteomeXchange: globally co-ordinated
@@ -31,3 +35,4 @@
 ##' - Gatto L. and Christoforou A. *Using R and Bioconductor for
 ##'   proteomics data analysis*, Biochim Biophys Acta - Proteins and
 ##'   Proteomics, 2013. http://www.ncbi.nlm.nih.gov/pubmed/23692960
+NULL

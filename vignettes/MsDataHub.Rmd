@@ -20,10 +20,11 @@ BiocStyle::markdown()
 
 # Available data
 
-## TripleTOF-SWATH
+## TripleTOF SWATH
 
 - Type: Raw MS data
 - Files: `PestMix1_DDA.mzML` and `PestMix1_SWATH.mzML`
+- More details: `?TripleTOF_SWATH"
 
 Load with
 
@@ -36,6 +37,7 @@ PestMix1_SWATH.mzML()
 
 - Type: Raw MS data
 - Files: `20171016_POOL_POS_1_105-134.mzML` and `20171016_POOL_POS_3_105-134.mzML`
+- More details: `?sciex"
 
 Load with
 

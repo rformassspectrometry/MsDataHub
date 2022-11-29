@@ -1,5 +1,9 @@
 ##' @title AB Sciex LC-MS data files
 ##'
+##' @name sciex
+##'
+##' @aliases 20171016_POOL_POS_1_105-134.mzML 20171016_POOL_POS_3_105-134.mzML
+##'
 ##' @description
 ##'
 ##' The *sciex* mzML files represent profile-mode LC-MS data of pooled
@@ -30,3 +34,4 @@
 ##' @author
 ##'
 ##' Sigurdur Smarason, Giuseppe Paglia and Johannes Rainer
+NULL
