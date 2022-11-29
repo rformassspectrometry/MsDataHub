@@ -44,6 +44,20 @@ Load with
 20171016_POOL_POS_3_105-134.mzML()
 ```
 
+## PXD000001
+
+- Type: Raw MS data an MS2 identification
+- Files:
+  `"TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz`
+  and
+  `TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid`
+
+Load with
+
+```{r, eval = FALSE}
+TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz()
+TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid()
+```
 
 # Session information {-}
 
