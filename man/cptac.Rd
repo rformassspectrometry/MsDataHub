@@ -25,9 +25,9 @@ Five different spike-in concentrations were used:
 
 Three replicates are available for each concentration.
 
-The data were searched with MaxQuant (Cox et al. 2008) version
-1.5.2.8, and detailed search settings were described in Goeminne
-et al. (2016).
+The data were searched with MaxQuant version 1.5.2.8 (Cox et
+al. 2008) including matching between runs. Detailed search
+settings were described in Goeminne et al. (2016).
 
 Three files are readily available as tab-delimited spreadsheets:
 \itemize{
