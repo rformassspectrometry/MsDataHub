@@ -28,9 +28,12 @@
 ##'
 ##' Three files are readily available as tab-delimited spreadsheets:
 ##'
-##' - cptac_a_b_peptides.txt: triplicates for groupes 6A and 6B.
-##' - cptac_a_b_c_peptides.txt: triplicates for groupes 6A, 6B and 6C.
-##' - cptac_peptides.txt: triplicates for all groupes.
+##' - cptac_a_b_peptides.txt: triplicates from lab 3 for groupes 6A
+##'   and 6B.
+##' - cptac_a_b_c_peptides.txt: triplicates from labs 1, 2 and 3 for
+##'   groupes 6A, 6B and 6C.
+##' - cptac_peptides.txt: triplicates from labs 1, 2, and 3 for all
+##'   groups.
 ##'
 ##' @references
 ##'
