@@ -6,5 +6,19 @@
 \alias{PestMix1_SWATH.mzML}
 \title{Triple TOF SWATH Data}
 \description{
-Triple TOF SWATH Data
+These files represent data from reverse-phased LC-MS/MS runs on the
+Agilent Pesticide mix obtained from a Sciex 6600 Triple ToF operated
+either in Sequential Window Acquisition of all THeoretical mass spectra
+(SWATH) or Data Dependent Acquisition (DDA) acquisition mode.
+
+The data files are:
+\itemize{
+\item \emph{PestMix1_DDA.mzML}: mzML file with MS1 and MS2 spectra from the
+Agilent Pesticide Mix acquired in DDA mode.
+\item \emph{PestMix1_SWATH.mzML}: mzML file with MS1 and MS2 spectra from
+the Agilent Pesticide Mix acquired in SWATH mode.
+}
+}
+\author{
+Micheal Witting, Johannes Rainer
 }
