@@ -14,7 +14,7 @@
 ##' based in hydrophilic interaction liquid chromatography (HILIC) and
 ##' performed using an Waters Acquity BEH Amide, 100 x 2.1 mm column.
 ##'
-##' The mass specctrometer was operated in full scan mode in the mass
+##' The mass spectrometer was operated in full scan mode in the mass
 ##' range from 50 to 1000 m/z and with an accumulation time of 250
 ##' ms. The files represent a subset of spectra/scans from m/z 105 to
 ##' 134 and from retention time 0 to 260 seconds. The files were
@@ -24,14 +24,12 @@
 ##'
 ##' Files:
 ##'
-##' - 20171016_POOL_POS_1_105-134.mzML: profile-mode LC-MS data of
+##' - *20171016_POOL_POS_1_105-134.mzML*: profile-mode LC-MS data of
 ##'   pooled human serum samples. Injection index: 1.
 ##'
-##' - 20171016_POOL_POS_3_105-134.mzML: profile-mode LC-MS data of
+##' - *20171016_POOL_POS_3_105-134.mzML*: profile-mode LC-MS data of
 ##'   pooled human serum samples. Injection index: 19.
 ##'
 ##'
-##' @author
-##'
-##' Sigurdur Smarason, Giuseppe Paglia and Johannes Rainer
+##' @author Sigurdur Smarason, Giuseppe Paglia and Johannes Rainer
 NULL
