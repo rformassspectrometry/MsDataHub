@@ -13,7 +13,11 @@ if (!file.exists(destdir))
     dir.create(destdir)
 dest <- file.path(destdir, basename(fls))
 
-## copy and check
-status <- file.copy(from = fls, to = dest)
-stopifnot(status)
-stopifnot(file.exists(dest))
+dest <- dest[!file.exists(dest)]
+
+if (length(dest)) {
+    ## copy and check
+    status <- file.copy(from = fls, to = dest)
+    stopifnot(status)
+    stopifnot(file.exists(dest))
+}

@@ -20,15 +20,22 @@ if (!file.exists(destdir))
 dest <- file.path(destdir, basename(fls))
 dest2 <- file.path(destdir, names(fls2))
 
-## copy and check
-status <- file.copy(from = fls, to = dest)
-stopifnot(status)
-stopifnot(file.exists(dest))
 
-## download and check
-status2 <- mapply(download.file, url = fls2, destfile = dest2)
-stopifnot(status2 == 0)
-stopifnot(file.exists(dest2))
+dest <- dest[!file.exists(dest)]
+if (length(dest)) {
+    ## copy and check
+    status <- file.copy(from = fls, to = dest)
+    stopifnot(status)
+    stopifnot(file.exists(dest))
+}
+
+dest2 <- dest[!file.exists(dest2)]
+if (length(dest2)) {
+    ## download and check
+    status2 <- mapply(download.file, url = fls2, destfile = dest2)
+    stopifnot(status2 == 0)
+    stopifnot(file.exists(dest2))
+}
 
 stopifnot(identical(dir(destdir), c("cptac_a_b_c_peptides.txt",
                                     "cptac_a_b_peptides.txt",
