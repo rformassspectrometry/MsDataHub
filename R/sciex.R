@@ -21,7 +21,6 @@
 ##' generated in the same LC-MS run, but from different
 ##' injections. Details on the individual files are provided below.
 ##'
-##'
 ##' Files:
 ##'
 ##' - *20171016_POOL_POS_1_105-134.mzML*: profile-mode LC-MS data of

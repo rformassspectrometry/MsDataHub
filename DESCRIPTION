@@ -7,19 +7,26 @@ Authors@R:
            email = "laurent.gatto@uclouvain.be",
            role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1520-2268"))
-Description: What the package does (one paragraph).
+Description: The MsDataHub package provides example mass spectrometry
+             data, peptide spectrum matches or quantitative data from
+             proteomics and metabolomics experiments.
 License: Artistic-2.0
-BugReports: https://support.bioconductor.org/t/MsDataHub
+BugReports: https://github.com/RforMassSpectrometry/MsDataHub/issues
 Imports:
     ExperimentHub
 Suggests:
     ExperimentHubData,
+    DT,
+    BiocStyle,
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 biocViews: ExperimentHubSoftware,
            MassSpectrometry,
            Proteomics,
            Metabolomics
 Encoding: UTF-8
+VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.2
+RoxygenNote: 7.2.3
 Config/testthat/edition: 3

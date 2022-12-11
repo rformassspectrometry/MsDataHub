@@ -128,5 +128,8 @@ if (!grepl("MsDataHub/inst/scripts", getwd()))
     stop("Run from MsDataHub/inst/scripts")
 write.csv(metadata, file = "../extdata/metadata.csv", row.names = FALSE)
 
-AnnotationHubData::makeAnnotationHubMetadata(pathToPackage = "~/wrk/MsDataHub/",
+pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
+                        "MsDataHub")
+
+AnnotationHubData::makeAnnotationHubMetadata(pathToPackage = pkg_source,
                                              fileName = "metadata.csv")

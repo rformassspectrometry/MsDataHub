@@ -11,20 +11,53 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %%\VignetteKeywords{Mass Spectrometry, MS, MSMS, Proteomics, Metabolomics}
   %\VignetteEncoding{UTF-8}
-bibiliography: references.bib
 ---
 
 ```{r style, echo = FALSE, results = 'asis'}
 BiocStyle::markdown()
 ```
 
+# Introduction
+
+The `MsDataHub` package provides example mass spectrometry data,
+peptide spectrum matches or quantitative data from proteomics and
+metabolomics experiments. The data are served through the
+`ExperimentHub` infrastructure, which allows download them only ones
+and cache them for further use. Currenly available data are summarised
+in the table below and details in the next section.
+
+```{r data}
+library("MsDataHub")
+DT::datatable(MsDataHub())
+```
+
+# Installation
+
+To install the package:
+
+```{r install1, eval = FALSE}
+if (!require("BiocManager"))
+    install.packages("BiocManager")
+
+BiocManager::install("MsDataHub")
+```
+
+To install the package from Github:
+
+```{r install2, eval = FALSE}
+if (!require("BiocManager"))
+    install.packages("BiocManager")
+
+BiocManager::install("RforMassSpectrometry/MsDataHub")
+```
+
 # Available data
 
-## TripleTOF SWATH
+## TripleTOF
 
 - Type: Raw MS data
 - Files: `PestMix1_DDA.mzML` and `PestMix1_SWATH.mzML`
-- More details: `?TripleTOF_SWATH"
+- More details: `?TripleTOF`
 
 Load with
 
@@ -37,7 +70,7 @@ PestMix1_SWATH.mzML()
 
 - Type: Raw MS data
 - Files: `20171016_POOL_POS_1_105-134.mzML` and `20171016_POOL_POS_3_105-134.mzML`
-- More details: `?sciex"
+- More details: `?sciex`
 
 Load with
 
@@ -48,11 +81,12 @@ Load with
 
 ## PXD000001
 
-- Type: Raw MS data an MS2 identification
+- Type: Raw MS data and peptide spectum matches
 - Files:
-  `"TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz`
+  `TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz`
   and
   `TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid`
+- More details: `?PDX000001`
 
 Load with
 
@@ -61,10 +95,58 @@ TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz()
 TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid()
 ```
 
+## CPTAC
+
+- Type: tab-delimited quantitative proteomics data tables (as produced
+  by MaxQuant)
+- Files: `cptac_a_b_c_peptides.txt`, `cptac_a_b_peptides.txt` and
+  `cptac_peptides.txt`
+- More details: `?cptac`
+
+Load with
+
+```{r, eval = FALSE}
+cptac_a_b_c_peptides.txt()
+cptac_a_b_peptides.txt()
+cptac_peptides.txt()
+```
+
+## FAAH KO
+
+- Type: Raw MS data, in netCDF format.
+- File: `ko15.CDF`
+- More details: `?cdf`
+
+Load with
+
+```{r, eval = FALSE}
+ko15.CDF()
+```
+
+# Adding data to `MsDataHub`
+
+1. If you would like additional dataset to `MsDataHub`, start by
+   opening an
+   [issue](https://github.com/rformassspectrometry/MsDataHub/issues)
+   in the package's Github repository and describe the new data. In
+   particular, provide information about it's provenance, its use, its
+   format(s) and acknowledge that the data may be shared freely with
+   the community without any restrictions. You may provide an open
+   licence specifying the terms it can be re-used, typically a
+   CC-BY-SA license.
+2. A maintainer of the package will reply to your issue, confirming
+   that the data can be added.
+3. At this point, if you are familiar with the development of
+   `ExperimentHub` packages and GitHub *pull requests*, you may
+   directly send one that adds your data to the package. Make sure (1)
+   add appropriate references in the manual page and (2) to add
+   yourself as a contributor of the package in the DESCRIPTION file.
+4. Alternatively, a maintainer will add you dataset to the package and
+    may require your input to make sure the documentation file is
+    complete.
+
 # Session information {-}
 
 ```{r sessioninfo, echo=FALSE}
 sessionInfo()
 ```
-
-# References {-}

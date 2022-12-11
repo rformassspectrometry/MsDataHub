@@ -11,16 +11,16 @@ This case-study is a subset of the data of the 6th study of the
 Clinical Proteomic Technology Assessment for Cancer (CPTAC)
 (Paulovich et al. 2010). In this experiment, the authors spiked
 the Sigma Universal Protein Standard mixture 1 (UPS1) containing
-48 different human proteins in a protein background of 60 ng/μL
-Saccharomyces cerevisiae strain BY4741.
+48 different human proteins in a protein background of 60
+micro g/micro L Saccharomyces cerevisiae strain BY4741.
 
 Five different spike-in concentrations were used:
 \itemize{
-\item 6A: 0.25 fmol UPS1 proteins/μL
-\item 6B: 0.74 fmol UPS1 proteins/μL
-\item 6C: 2.22 fmol UPS1 proteins/μL
-\item 6D: 6.67 fmol UPS1 proteins/μL
-\item 6E: 20 fmol UPS1 proteins/μL
+\item 6A: 0.25 fmol UPS1 proteins/micro L
+\item 6B: 0.74 fmol UPS1 proteins/micro L
+\item 6C: 2.22 fmol UPS1 proteins/micro L
+\item 6D: 6.67 fmol UPS1 proteins/micro L
+\item 6E: 20 fmol UPS1 proteins/micro L
 }
 
 Three replicates are available for each concentration.
