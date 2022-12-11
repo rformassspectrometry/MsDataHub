@@ -134,16 +134,19 @@ ko15.CDF()
    the community without any restrictions. You may provide an open
    licence specifying the terms it can be re-used, typically a
    CC-BY-SA license.
-2. A maintainer of the package will reply to your issue, confirming
+2. By contribution to the package, you acknowledge that you will
+   comply to the R for Mass Spectrometry project [code of
+   conduct](https://rformassspectrometry.github.io/RforMassSpectrometry/articles/RforMassSpectrometry.html#code-of-conduct).
+3. A maintainer of the package will reply to your issue, confirming
    that the data can be added.
-3. At this point, if you are familiar with the development of
+4. At this point, if you are familiar with the development of
    `ExperimentHub` packages and GitHub *pull requests*, you may
    directly send one that adds your data to the package. Make sure (1)
    add appropriate references in the manual page and (2) to add
    yourself as a contributor of the package in the DESCRIPTION file.
-4. Alternatively, a maintainer will add you dataset to the package and
-    may require your input to make sure the documentation file is
-    complete.
+5. Alternatively, a maintainer will add you dataset to the package and
+   may require your input to make sure the documentation file is
+   complete.
 
 # Session information {-}
 
