@@ -11,9 +11,16 @@ A \code{data.frame} describing the data available in
 \code{MsDataHub}.
 }
 \description{
+The MsDataHub package provides example mass spectrometry data,
+peptide spectrum matches or quantitative data from proteomics and
+metabolomics experiments.
+
 The \code{\link[=MsDataHub]{MsDataHub()}} function returns a \code{data.frame} with all the
 annotated datasets provided in the package. For details on these
 individual datasets, refer to their respective manual pages.
+
+See the vignette and the respective manuals pages for more details
+about the package and the data themselves.
 }
 \examples{
 
