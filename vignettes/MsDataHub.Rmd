@@ -23,7 +23,7 @@ The `MsDataHub` package provides example mass spectrometry data,
 peptide spectrum matches or quantitative data from proteomics and
 metabolomics experiments. The data are served through the
 `ExperimentHub` infrastructure, which allows download them only ones
-and cache them for further use. Currenly available data are summarised
+and cache them for further use. Currently available data are summarised
 in the table below and details in the next section.
 
 ```{r data}
@@ -42,7 +42,7 @@ if (!require("BiocManager"))
 BiocManager::install("MsDataHub")
 ```
 
-To install the package from Github:
+To install the package from GitHub:
 
 ```{r install2, eval = FALSE}
 if (!require("BiocManager"))
@@ -81,7 +81,7 @@ Load with
 
 ## PXD000001
 
-- Type: Raw MS data and peptide spectum matches
+- Type: Raw MS data and peptide spectrum matches
 - Files:
   `TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz`
   and
@@ -128,7 +128,7 @@ ko15.CDF()
 1. If you would like additional dataset to `MsDataHub`, start by
    opening an
    [issue](https://github.com/rformassspectrometry/MsDataHub/issues)
-   in the package's Github repository and describe the new data. In
+   in the package's GitHub repository and describe the new data. In
    particular, provide information about it's provenance, its use, its
    format(s) and acknowledge that the data may be shared freely with
    the community without any restrictions. You may provide an open
@@ -144,7 +144,7 @@ ko15.CDF()
    directly send one that adds your data to the package. Make sure (1)
    add appropriate references in the manual page and (2) to add
    yourself as a contributor of the package in the DESCRIPTION file.
-5. Alternatively, a maintainer will add you dataset to the package and
+5. Alternatively, a maintainer will add the dataset to the package and
    may require your input to make sure the documentation file is
    complete.
 
