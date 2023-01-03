@@ -109,17 +109,20 @@ metadata <-
             "FilePath",
             "FilePath"
         ),
+        ## NB: locally, the data are stored in the package's data
+        ## directory, by in the Azure cloud, they are located in the
+        ## package's root directory.
         RDataPath = c(
-            "MsDataHub/data/cdf/ko15.CDF",
-            "MsDataHub/data/cptac/cptac_a_b_c_peptides.txt",
-            "MsDataHub/data/cptac/cptac_a_b_peptides.txt",
-            "MsDataHub/data/cptac/cptac_peptides.txt",
-            "MsDataHub/data/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid",
-            "MsDataHub/data/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz",
-            "MsDataHub/data/sciex/20171016_POOL_POS_1_105-134.mzML",
-            "MsDataHub/data/sciex/20171016_POOL_POS_3_105-134.mzML",
-            "MsDataHub/data/TripleTOF-SWATH/PestMix1_DDA.mzML",
-            "MsDataHub/data/TripleTOF-SWATH/PestMix1_SWATH.mzML"
+            "MsDataHub/cdf/ko15.CDF",
+            "MsDataHub/cptac/cptac_a_b_c_peptides.txt",
+            "MsDataHub/cptac/cptac_a_b_peptides.txt",
+            "MsDataHub/cptac/cptac_peptides.txt",
+            "MsDataHub/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid",
+            "MsDataHub/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz",
+            "MsDataHub/sciex/20171016_POOL_POS_1_105-134.mzML",
+            "MsDataHub/sciex/20171016_POOL_POS_3_105-134.mzML",
+            "MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML",
+            "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML"
         ),
         Tags = ""
     )

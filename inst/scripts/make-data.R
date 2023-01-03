@@ -8,6 +8,10 @@ stopifnot(grepl("MsDataHub/inst/scripts", getwd()))
 ## data if it's not already available in the destination directory. To
 ## force download data, delete MsDataHub/data/*.
 
+## NB: locally, the data are stored in the package's data directory,
+## by in the Azure cloud, they are located in the package's root
+## directory.
+
 for (f in make_data) {
     message("Sourcing ", f)
     source(f)
