@@ -6,7 +6,12 @@ Authors@R:
            family = "Gatto",
            email = "laurent.gatto@uclouvain.be",
            role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-1520-2268"))
+           comment = c(ORCID = "0000-0002-1520-2268"),
+    person(given = "Johannes",
+           family = "Rainer",
+           email = "Johannes.Rainer@eurac.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-6977-7147")))
 Description: The MsDataHub package provides example mass spectrometry
              data, peptide spectrum matches or quantitative data from
              proteomics and metabolomics experiments.
