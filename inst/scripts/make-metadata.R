@@ -127,6 +127,14 @@ metadata <-
         Tags = ""
     )
 
+
+## The experiment titles are conferted into functions to directly
+## access the individual resources. This requires that they correspond
+## to valid unique symbol names. To assert this, then are converted
+## with make.names().
+metadata[["Title"]] <- make.names(metadata[["Title"]])
+
+
 if (!grepl("MsDataHub/inst/scripts", getwd()))
     stop("Run from MsDataHub/inst/scripts")
 write.csv(metadata, file = "../extdata/metadata.csv", row.names = FALSE)

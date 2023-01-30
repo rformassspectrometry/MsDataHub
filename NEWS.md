@@ -2,7 +2,9 @@
 
 ## MsDataHub 0.99.2
 
-- Address filenames with `-`.
+- Fix title names with `make.names()` to assert that they will
+  represent valid function names after running
+  `ExperimentHub::createHubAccessors()`.
 
 ## MsDataHub 0.99.1
 
