@@ -12,7 +12,7 @@ metadata <-
             "cptac_a_b_c_peptides.txt",
             "cptac_a_b_peptides.txt",
             "cptac_peptides.txt",
-            "TMT_Erwinia_1uLSike_Top10HCD_iso1l2_45stepped_60min_01-20141210.mzid",
+            "TMT_Erwinia_1uLSike_Top10HCD_iso12_45stepped_60min_01-20141210.mzid",
             "TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz",
             "20171016_POOL_POS_1_105-134.mzML",
             "20171016_POOL_POS_3_105-134.mzML",
