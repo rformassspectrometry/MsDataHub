@@ -25,6 +25,8 @@
 ##'
 ##' @aliases TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz
 ##'
+##' @aliases TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzid TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzML.gz
+##'
 ##' @references
 ##'
 ##' - Vizcaíno J.A. et al. *ProteomeXchange: globally co-ordinated

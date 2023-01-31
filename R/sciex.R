@@ -4,6 +4,8 @@
 ##'
 ##' @aliases 20171016_POOL_POS_1_105-134.mzML 20171016_POOL_POS_3_105-134.mzML
 ##'
+##' @aliases 20171016_POOL_POS_1_105.134.mzML 20171016_POOL_POS_3_105.134.mzML
+##'
 ##' @description
 ##'
 ##' The *sciex* mzML files represent profile-mode LC-MS data of pooled

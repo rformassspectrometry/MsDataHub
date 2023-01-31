@@ -4,6 +4,8 @@
 \alias{sciex}
 \alias{20171016_POOL_POS_1_105-134.mzML}
 \alias{20171016_POOL_POS_3_105-134.mzML}
+\alias{20171016_POOL_POS_1_105.134.mzML}
+\alias{20171016_POOL_POS_3_105.134.mzML}
 \title{AB Sciex LC-MS data files}
 \description{
 The \emph{sciex} mzML files represent profile-mode LC-MS data of pooled

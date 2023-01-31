@@ -4,6 +4,8 @@
 \alias{PXD000001}
 \alias{TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid}
 \alias{TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz}
+\alias{TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzid}
+\alias{TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzML.gz}
 \title{PXD000001 Proteomics Data}
 \description{
 The PXD000001 files are part of the first ProteomeXchange
