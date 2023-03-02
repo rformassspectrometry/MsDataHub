@@ -17,6 +17,14 @@ vignette: >
 BiocStyle::markdown()
 ```
 
+```{r env, echo = FALSE, message = FALSE}
+library(Spectra)
+library(PSMatch)
+library(QFeatures)
+```
+
+
+
 # Introduction
 
 The `MsDataHub` package provides example mass spectrometry data,
@@ -61,9 +69,15 @@ BiocManager::install("RforMassSpectrometry/MsDataHub")
 
 Load with
 
-```{r, eval = FALSE}
-PestMix1_DDA.mzML()
-PestMix1_SWATH.mzML()
+```{r, eval = TRUE}
+f <- PestMix1_DDA.mzML()
+library(Spectra)
+Spectra(f)
+```
+
+```{r, eval = TRUE}
+f <- PestMix1_SWATH.mzML()
+Spectra(f)
 ```
 
 ## sciex
@@ -74,9 +88,13 @@ PestMix1_SWATH.mzML()
 
 Load with
 
-```{r, eval = FALSE}
-20171016_POOL_POS_1_105-134.mzML()
-20171016_POOL_POS_3_105-134.mzML()
+```{r, eval = TRUE}
+f <- X20171016_POOL_POS_1_105.134.mzML()
+Spectra(f)
+```
+```{r, eval = TRUE}
+f <- X20171016_POOL_POS_3_105.134.mzML()
+Spectra(f)
 ```
 
 ## PXD000001
@@ -90,9 +108,15 @@ Load with
 
 Load with
 
-```{r, eval = FALSE}
-TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz()
-TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid()
+```{r, eval = TRUE}
+f <- TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzML.gz()
+Spectra(f)
+```
+
+```{r, eval = TRUE}
+f <- TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzid()
+library(PSMatch)
+PSM(f)
 ```
 
 ## CPTAC
@@ -105,10 +129,16 @@ TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid()
 
 Load with
 
-```{r, eval = FALSE}
+```{r, eval = TRUE}
+library(QFeatures)
+f <- cptac_peptides.txt()
+ecols <- grep("Intensity\\.", names(read.delim(f)))
+readSummarizedExperiment(f, ecols, sep = "\t")
+```
+
+```{r, eval = TRUE}
 cptac_a_b_c_peptides.txt()
 cptac_a_b_peptides.txt()
-cptac_peptides.txt()
 ```
 
 ## FAAH KO
@@ -119,8 +149,9 @@ cptac_peptides.txt()
 
 Load with
 
-```{r, eval = FALSE}
-ko15.CDF()
+```{r, eval = TRUE}
+f <- ko15.CDF()
+Spectra(f)
 ```
 
 # Adding data to `MsDataHub`

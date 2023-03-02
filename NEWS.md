@@ -5,6 +5,7 @@
 - Fix title names with `make.names()` to assert that they will
   represent valid function names after running
   `ExperimentHub::createHubAccessors()`.
+- Execute chunks in vignette.
 
 ## MsDataHub 0.99.1
 
