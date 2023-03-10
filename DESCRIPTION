@@ -1,6 +1,6 @@
 Package: MsDataHub
 Title: Mass Spectrometry Data on ExperimentHub
-Version: 0.99.2
+Version: 0.99.3
 Authors@R:
     c(person(given = "Laurent",
              family = "Gatto",
@@ -35,6 +35,7 @@ biocViews: ExperimentHubSoftware,
            MassSpectrometry,
            Proteomics,
            Metabolomics
+BugReports: https://support.bioconductor.org/
 Encoding: UTF-8
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)

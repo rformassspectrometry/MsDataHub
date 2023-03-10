@@ -1,5 +1,10 @@
 # MsDataHub 0.99
 
+## MsDataHub 0.99.3
+
+- Updates based on package review (see
+  https://github.com/Bioconductor/Contributions/issues/2887#issuecomment-1463655683).
+
 ## MsDataHub 0.99.2
 
 - Fix title names with `make.names()` to assert that they will
