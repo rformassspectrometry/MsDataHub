@@ -35,7 +35,6 @@ biocViews: ExperimentHubSoftware,
            MassSpectrometry,
            Proteomics,
            Metabolomics
-BugReports: https://support.bioconductor.org/
 Encoding: UTF-8
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
