@@ -18,6 +18,7 @@ Description: The MsDataHub package uses the ExperimentHub
              proteomics and metabolomics experiments.
 License: Artistic-2.0
 BugReports: https://github.com/RforMassSpectrometry/MsDataHub/issues
+URL: https://rformassspectrometry.github.io/MsDataHub
 Imports:
     ExperimentHub,
     utils

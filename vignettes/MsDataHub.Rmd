@@ -50,14 +50,6 @@ if (!require("BiocManager"))
 BiocManager::install("MsDataHub")
 ```
 
-To install the package from GitHub:
-
-```{r install2, eval = FALSE}
-if (!require("BiocManager"))
-    install.packages("BiocManager")
-
-BiocManager::install("RforMassSpectrometry/MsDataHub")
-```
 
 # Available data
 

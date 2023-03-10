@@ -9,20 +9,11 @@ only ones and cache them for further use.
 
 To install the package:
 
-```{r install1, eval = FALSE}
+```
 if (!require("BiocManager"))
     install.packages("BiocManager")
 
 BiocManager::install("MsDataHub")
-```
-
-To install the package from Github:
-
-```{r install2, eval = FALSE}
-if (!require("BiocManager"))
-    install.packages("BiocManager")
-
-BiocManager::install("RforMassSpectrometry/MsDataHub")
 ```
 
 ## Availabe data
