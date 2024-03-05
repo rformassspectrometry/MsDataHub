@@ -1,3 +1,15 @@
+# MsDataHub 1.3
+
+## MsDataHub 1.3.1
+
+- Add benchmarkingDIA data, contributed by Kristina Gomoryova.
+
+# MsDataHub 1.0
+
+## MsDataHub 1.0.0
+
+- First official stable release.
+
 # MsDataHub 0.99
 
 ## MsDataHub 0.99.3
