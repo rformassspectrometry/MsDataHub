@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">MsDataHub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.99.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.1</span>
       </span>
     </div>
 
@@ -66,11 +66,11 @@
 
       
 
-      </header><script src="MsDataHub_files/htmlwidgets-1.6.1/htmlwidgets.js"></script><link href="MsDataHub_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="MsDataHub_files/datatables-binding-0.27/datatables.js"></script><link href="MsDataHub_files/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="MsDataHub_files/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="MsDataHub_files/dt-core-1.12.1/js/jquery.dataTables.min.js"></script><link href="MsDataHub_files/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
-<script src="MsDataHub_files/crosstalk-1.2.0/js/crosstalk.min.js"></script><div class="row">
+      </header><script src="MsDataHub_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><link href="MsDataHub_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="MsDataHub_files/datatables-binding-0.32/datatables.js"></script><link href="MsDataHub_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="MsDataHub_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="MsDataHub_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script><link href="MsDataHub_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="MsDataHub_files/crosstalk-1.2.1/js/crosstalk.min.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Mass Spectrometry Data on ExperimentHub</h1>
@@ -106,22 +106,20 @@ metabolomics experiments. The data are served through the
 only ones and cache them for further use. Currently available data are
 summarised in the table below and details in the next section.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://rformassspectrometry.github.io/MsDataHub" class="external-link">"MsDataHub"</a></span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## snapshotDate(): 2023-02-28</span></span></code></pre>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">DT</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/DT/man/datatable.html" class="external-link">datatable</a></span><span class="op">(</span><span class="fu"><a href="../reference/MsDataHub.html">MsDataHub</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8a45899fafeb01730a4c" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-8a45899fafeb01730a4c">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10"],["ko15.CDF","cptac_a_b_c_peptides.txt","cptac_a_b_peptides.txt","cptac_peptides.txt","TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzid","TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzML.gz","X20171016_POOL_POS_1_105.134.mzML","X20171016_POOL_POS_3_105.134.mzML","PestMix1_DDA.mzML","PestMix1_SWATH.mzML"],["Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.","Conditions A, B and C of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.","Conditions A and B of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.","CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.","Peptide spectrum matches from the PDX000001 experiment. See ?PXD000001 for details.","Raw MS data from the PDX000001 experiment, in mzML format. See ?PXD000001 for details.","AB Sciex LC-MS data file (injection index 1), in mzML format. See ?sciex for details.","AB Sciex LC-MS data file (injection index 19), in mzML format. See ?sciex for details.","Triple TOF DDA raw data, in mzML format. See ?TripleTOF for details.","Triple TOF SWATH raw data, in mzML format. See ?TripleTOF for details."],[3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17],[null,null,null,null,null,null,null,null,null,null],["CDF","TXT","TXT","TXT","mzid","mzML","mzML","mzML","mzML","mzML"],["https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://raw.githubusercontent.com/statOmics/PDA/data/quantification/fullCptacDatasSetNotForTutorial/peptides.txt","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html"],[1,1,1,1,1,1,1,1,1,1],["Mus musculus","Saccharomyces cerevisiae","Saccharomyces cerevisiae","Saccharomyces cerevisiae","Erwinia carotovora","Erwinia carotovora","Homo sapiens","Homo sapiens","",""],[10090,4932,4932,4932,554,554,9606,9606,null,null],[null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null],["Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;"],["Spectra","data.frame","data.frame","data.frame","Spectra","PSM","Spectra","Spectra","Spectra","Spectra"],["FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath"],["MsDataHub/cdf/ko15.CDF","MsDataHub/cptac/cptac_a_b_c_peptides.txt","MsDataHub/cptac/cptac_a_b_peptides.txt","MsDataHub/cptac/cptac_peptides.txt","MsDataHub/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid","MsDataHub/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz","MsDataHub/sciex/20171016_POOL_POS_1_105-134.mzML","MsDataHub/sciex/20171016_POOL_POS_3_105-134.mzML","MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML","MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML"],[null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Title<\/th>\n      <th>Description<\/th>\n      <th>BiocVersion<\/th>\n      <th>Genome<\/th>\n      <th>SourceType<\/th>\n      <th>SourceUrl<\/th>\n      <th>SourceVersion<\/th>\n      <th>Species<\/th>\n      <th>TaxonomyId<\/th>\n      <th>Coordinate_1_based<\/th>\n      <th>DataProvider<\/th>\n      <th>Maintainer<\/th>\n      <th>RDataClass<\/th>\n      <th>DispatchClass<\/th>\n      <th>RDataPath<\/th>\n      <th>Tags<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,7,9]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://rformassspectrometry.github.io/MsDataHub" class="external-link">"MsDataHub"</a></span><span class="op">)</span></span>
+<span><span class="fu">DT</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/DT/man/datatable.html" class="external-link">datatable</a></span><span class="op">(</span><span class="fu"><a href="../reference/MsDataHub.html">MsDataHub</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3053f9d039eb3a5f0b8c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3053f9d039eb3a5f0b8c">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["ko15.CDF","cptac_a_b_c_peptides.txt","cptac_a_b_peptides.txt","cptac_peptides.txt","TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzid","TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzML.gz","X20171016_POOL_POS_1_105.134.mzML","X20171016_POOL_POS_3_105.134.mzML","PestMix1_DDA.mzML","PestMix1_SWATH.mzML","benchmarkingDIA.tsv"],["Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.","Conditions A, B and C of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.","Conditions A and B of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.","CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.","Peptide spectrum matches from the PDX000001 experiment. See ?PXD000001 for details.","Raw MS data from the PDX000001 experiment, in mzML format. See ?PXD000001 for details.","AB Sciex LC-MS data file (injection index 1), in mzML format. See ?sciex for details.","AB Sciex LC-MS data file (injection index 19), in mzML format. See ?sciex for details.","Triple TOF DDA raw data, in mzML format. See ?TripleTOF for details.","Triple TOF SWATH raw data, in mzML format. See ?TripleTOF for details.","Output of DIA-NN software (report.tsv)"],[3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17,3.17],[null,null,null,null,null,null,null,null,null,null,null],["CDF","TXT","TXT","TXT","mzid","mzML","mzML","mzML","mzML","mzML","TSV"],["https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://raw.githubusercontent.com/statOmics/PDA/data/quantification/fullCptacDatasSetNotForTutorial/peptides.txt","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html","https://zenodo.org/record/8063173"],[1,1,1,1,1,1,1,1,1,1,1],["Mus musculus","Saccharomyces cerevisiae","Saccharomyces cerevisiae","Saccharomyces cerevisiae","Erwinia carotovora","Erwinia carotovora","Homo sapiens","Homo sapiens","","","Homo sapiens"],[10090,4932,4932,4932,554,554,9606,9606,null,null,9606],[null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null],["Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;","Laurent Gatto &lt;laurent.gatto@uclouvain.be&gt;"],["Spectra","data.frame","data.frame","data.frame","Spectra","PSM","Spectra","Spectra","Spectra","Spectra","data.frame"],["FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath","FilePath"],["","","","","","","","","","","https://zenodo.org/"],["MsDataHub/cdf/ko15.CDF","MsDataHub/cptac/cptac_a_b_c_peptides.txt","MsDataHub/cptac/cptac_a_b_peptides.txt","MsDataHub/cptac/cptac_peptides.txt","MsDataHub/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzid","MsDataHub/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML.gz","MsDataHub/sciex/20171016_POOL_POS_1_105-134.mzML","MsDataHub/sciex/20171016_POOL_POS_3_105-134.mzML","MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML","MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML","record/8063173/benchmarkingDIA.tsv"],[null,null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Title<\/th>\n      <th>Description<\/th>\n      <th>BiocVersion<\/th>\n      <th>Genome<\/th>\n      <th>SourceType<\/th>\n      <th>SourceUrl<\/th>\n      <th>SourceVersion<\/th>\n      <th>Species<\/th>\n      <th>TaxonomyId<\/th>\n      <th>Coordinate_1_based<\/th>\n      <th>DataProvider<\/th>\n      <th>Maintainer<\/th>\n      <th>RDataClass<\/th>\n      <th>DispatchClass<\/th>\n      <th>Location_Prefix<\/th>\n      <th>RDataPath<\/th>\n      <th>Tags<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,7,9]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Title","targets":1},{"name":"Description","targets":2},{"name":"BiocVersion","targets":3},{"name":"Genome","targets":4},{"name":"SourceType","targets":5},{"name":"SourceUrl","targets":6},{"name":"SourceVersion","targets":7},{"name":"Species","targets":8},{"name":"TaxonomyId","targets":9},{"name":"Coordinate_1_based","targets":10},{"name":"DataProvider","targets":11},{"name":"Maintainer","targets":12},{"name":"RDataClass","targets":13},{"name":"DispatchClass","targets":14},{"name":"Location_Prefix","targets":15},{"name":"RDataPath","targets":16},{"name":"Tags","targets":17}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>To install the package:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st">"BiocManager"</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://bioconductor.github.io/BiocManager/" class="external-link">"BiocManager"</a></span><span class="op">)</span><span class="op">)</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"BiocManager"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"MsDataHub"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://bioconductor.github.io/BiocManager/reference/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"MsDataHub"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="available-data">Available data<a class="anchor" aria-label="anchor" href="#available-data"></a>
@@ -138,11 +136,11 @@ summarised in the table below and details in the next section.</p>
 </li>
 </ul>
 <p>Load with</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/TripleTOF.html">PestMix1_DDA.mzML</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RforMassSpectrometry/Spectra" class="external-link">Spectra</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/Spectra/man/Spectra.html" class="external-link">Spectra</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## MSn data (Spectra) with 7602 spectra in a MsBackendMzR backend:</span></span>
@@ -162,12 +160,12 @@ summarised in the table below and details in the next section.</p>
 <span><span class="co">##  ... 33 more variables/columns.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## file(s):</span></span>
-<span><span class="co">## b913fe77a93_7861</span></span></code></pre>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<span><span class="co">## 24c132125ac7_7861</span></span></code></pre>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/TripleTOF.html">PestMix1_SWATH.mzML</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Spectra/man/Spectra.html" class="external-link">Spectra</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## MSn data (Spectra) with 8999 spectra in a MsBackendMzR backend:</span></span>
 <span><span class="co">##        msLevel     rtime scanIndex</span></span>
@@ -186,7 +184,7 @@ summarised in the table below and details in the next section.</p>
 <span><span class="co">##  ... 33 more variables/columns.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## file(s):</span></span>
-<span><span class="co">## b91745e6506_7862</span></span></code></pre>
+<span><span class="co">## 24c16d1976b6_7862</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="sciex">sciex<a class="anchor" aria-label="anchor" href="#sciex"></a>
@@ -200,11 +198,11 @@ summarised in the table below and details in the next section.</p>
 </li>
 </ul>
 <p>Load with</p>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/sciex.html">X20171016_POOL_POS_1_105.134.mzML</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Spectra/man/Spectra.html" class="external-link">Spectra</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## MSn data (Spectra) with 931 spectra in a MsBackendMzR backend:</span></span>
 <span><span class="co">##       msLevel     rtime scanIndex</span></span>
@@ -223,12 +221,12 @@ summarised in the table below and details in the next section.</p>
 <span><span class="co">##  ... 33 more variables/columns.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## file(s):</span></span>
-<span><span class="co">## b916d850537_7859</span></span></code></pre>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<span><span class="co">## 24c168b300c4_7859</span></span></code></pre>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/sciex.html">X20171016_POOL_POS_3_105.134.mzML</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Spectra/man/Spectra.html" class="external-link">Spectra</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## MSn data (Spectra) with 931 spectra in a MsBackendMzR backend:</span></span>
 <span><span class="co">##       msLevel     rtime scanIndex</span></span>
@@ -247,7 +245,7 @@ summarised in the table below and details in the next section.</p>
 <span><span class="co">##  ... 33 more variables/columns.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## file(s):</span></span>
-<span><span class="co">## b916bd0d8bb_7860</span></span></code></pre>
+<span><span class="co">## 24c150077c8c_7860</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="pxd000001">PXD000001<a class="anchor" aria-label="anchor" href="#pxd000001"></a>
@@ -263,11 +261,11 @@ and
 </li>
 </ul>
 <p>Load with</p>
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/PXD000001.html">TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzML.gz</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Spectra/man/Spectra.html" class="external-link">Spectra</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## MSn data (Spectra) with 7534 spectra in a MsBackendMzR backend:</span></span>
 <span><span class="co">##        msLevel     rtime scanIndex</span></span>
@@ -286,12 +284,12 @@ and
 <span><span class="co">##  ... 33 more variables/columns.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## file(s):</span></span>
-<span><span class="co">## b91244a8b00_7858</span></span></code></pre>
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<span><span class="co">## 24c13a2f6935_7858</span></span></code></pre>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/PXD000001.html">TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.20141210.mzid</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RforMassSpectrometry/PSM" class="external-link">PSMatch</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/PSMatch/man/PSM.html" class="external-link">PSM</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## PSM with 5802 rows and 35 columns.</span></span>
@@ -311,12 +309,12 @@ by MaxQuant)</li>
 </li>
 </ul>
 <p>Load with</p>
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RforMassSpectrometry/QFeatures" class="external-link">QFeatures</a></span><span class="op">)</span></span>
 <span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/cptac.html">cptac_peptides.txt</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">ecols</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"Intensity\\."</span>, <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.delim</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/QFeatures/man/readQFeatures.html" class="external-link">readSummarizedExperiment</a></span><span class="op">(</span><span class="va">f</span>, <span class="va">ecols</span>, sep <span class="op">=</span> <span class="st">"\t"</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## class: SummarizedExperiment </span></span>
@@ -329,18 +327,18 @@ by MaxQuant)</li>
 <span><span class="co">## colnames(45): Intensity.6A_1 Intensity.6A_2 ... Intensity.6E_8</span></span>
 <span><span class="co">##   Intensity.6E_9</span></span>
 <span><span class="co">## colData names(0):</span></span></code></pre>
-<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/cptac.html">cptac_a_b_c_peptides.txt</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<pre><code><span><span class="co">##                                                 EH7804 </span></span>
-<span><span class="co">## "/github/home/.cache/R/ExperimentHub/b916070b5e9_7854"</span></span></code></pre>
-<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
+<pre><code><span><span class="co">##                                                  EH7804 </span></span>
+<span><span class="co">## "/github/home/.cache/R/ExperimentHub/24c177649867_7854"</span></span></code></pre>
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/cptac.html">cptac_a_b_peptides.txt</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span>
 <span><span class="co">## loading from cache</span></span></code></pre>
-<pre><code><span><span class="co">##                                                 EH7805 </span></span>
-<span><span class="co">## "/github/home/.cache/R/ExperimentHub/b913d06a2c3_7855"</span></span></code></pre>
+<pre><code><span><span class="co">##                                                  EH7805 </span></span>
+<span><span class="co">## "/github/home/.cache/R/ExperimentHub/24c16f5d304a_7855"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="faah-ko">FAAH KO<a class="anchor" aria-label="anchor" href="#faah-ko"></a>
@@ -353,11 +351,11 @@ by MaxQuant)</li>
 </li>
 </ul>
 <p>Load with</p>
-<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/cdf.html">ko15.CDF</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## see ?MsDataHub and browseVignettes('MsDataHub') for documentation</span></span></code></pre>
 <pre><code><span><span class="co">## loading from cache</span></span></code></pre>
-<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Spectra/man/Spectra.html" class="external-link">Spectra</a></span><span class="op">(</span><span class="va">f</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## MSn data (Spectra) with 1278 spectra in a MsBackendMzR backend:</span></span>
 <span><span class="co">##        msLevel     rtime scanIndex</span></span>
@@ -376,7 +374,7 @@ by MaxQuant)</li>
 <span><span class="co">##  ... 33 more variables/columns.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## file(s):</span></span>
-<span><span class="co">## b911e0918dd_7853</span></span></code></pre>
+<span><span class="co">## 24c12c8b80e9_7853</span></span></code></pre>
 </div>
 </div>
 <div class="section level2">
@@ -409,9 +407,9 @@ complete.</li>
 <div class="section level2">
 <h2 class="unnumbered" id="session-information">Session information<a class="anchor" aria-label="anchor" href="#session-information"></a>
 </h2>
-<pre><code><span><span class="co">## R Under development (unstable) (2023-03-02 r83926)</span></span>
-<span><span class="co">## Platform: x86_64-pc-linux-gnu (64-bit)</span></span>
-<span><span class="co">## Running under: Ubuntu 22.04.2 LTS</span></span>
+<pre><code><span><span class="co">## R Under development (unstable) (2024-02-28 r85999)</span></span>
+<span><span class="co">## Platform: x86_64-pc-linux-gnu</span></span>
+<span><span class="co">## Running under: Ubuntu 22.04.4 LTS</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Matrix products: default</span></span>
 <span><span class="co">## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 </span></span>
@@ -433,65 +431,47 @@ complete.</li>
 <span><span class="co">## [8] base     </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## other attached packages:</span></span>
-<span><span class="co">##  [1] MsDataHub_0.99.3            QFeatures_1.9.2            </span></span>
-<span><span class="co">##  [3] MultiAssayExperiment_1.25.7 SummarizedExperiment_1.29.1</span></span>
-<span><span class="co">##  [5] Biobase_2.59.0              GenomicRanges_1.51.4       </span></span>
-<span><span class="co">##  [7] GenomeInfoDb_1.35.15        IRanges_2.33.0             </span></span>
-<span><span class="co">##  [9] MatrixGenerics_1.11.0       matrixStats_0.63.0         </span></span>
-<span><span class="co">## [11] PSMatch_1.3.0               Spectra_1.9.12             </span></span>
-<span><span class="co">## [13] ProtGenerics_1.31.0         BiocParallel_1.33.9        </span></span>
-<span><span class="co">## [15] S4Vectors_0.37.4            BiocGenerics_0.45.0        </span></span>
-<span><span class="co">## [17] BiocStyle_2.27.1           </span></span>
+<span><span class="co">##  [1] MsDataHub_1.3.1             QFeatures_1.13.2           </span></span>
+<span><span class="co">##  [3] MultiAssayExperiment_1.29.1 SummarizedExperiment_1.33.3</span></span>
+<span><span class="co">##  [5] Biobase_2.63.0              GenomicRanges_1.55.3       </span></span>
+<span><span class="co">##  [7] GenomeInfoDb_1.39.7         IRanges_2.37.1             </span></span>
+<span><span class="co">##  [9] MatrixGenerics_1.15.0       matrixStats_1.2.0          </span></span>
+<span><span class="co">## [11] PSMatch_1.7.1               Spectra_1.13.5             </span></span>
+<span><span class="co">## [13] ProtGenerics_1.35.3         BiocParallel_1.37.0        </span></span>
+<span><span class="co">## [15] S4Vectors_0.41.3            BiocGenerics_0.49.1        </span></span>
+<span><span class="co">## [17] BiocStyle_2.31.0           </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## loaded via a namespace (and not attached):</span></span>
-<span><span class="co">##  [1] DBI_1.1.3                     bitops_1.0-7                 </span></span>
-<span><span class="co">##  [3] rlang_1.0.6                   magrittr_2.0.3               </span></span>
-<span><span class="co">##  [5] clue_0.3-64                   compiler_4.3.0               </span></span>
-<span><span class="co">##  [7] RSQLite_2.3.0                 png_0.1-8                    </span></span>
-<span><span class="co">##  [9] systemfonts_1.0.4             vctrs_0.5.2                  </span></span>
-<span><span class="co">## [11] stringr_1.5.0                 crayon_1.5.2                 </span></span>
-<span><span class="co">## [13] pkgconfig_2.0.3               fastmap_1.1.1                </span></span>
-<span><span class="co">## [15] dbplyr_2.3.1                  XVector_0.39.0               </span></span>
-<span><span class="co">## [17] ellipsis_0.3.2                utf8_1.2.3                   </span></span>
-<span><span class="co">## [19] promises_1.2.0.1              rmarkdown_2.20               </span></span>
-<span><span class="co">## [21] ragg_1.2.5                    purrr_1.0.1                  </span></span>
-<span><span class="co">## [23] bit_4.0.5                     xfun_0.37                    </span></span>
-<span><span class="co">## [25] zlibbioc_1.45.0               cachem_1.0.7                 </span></span>
-<span><span class="co">## [27] jsonlite_1.8.4                blob_1.2.3                   </span></span>
-<span><span class="co">## [29] later_1.3.0                   DelayedArray_0.25.0          </span></span>
-<span><span class="co">## [31] interactiveDisplayBase_1.37.0 parallel_4.3.0               </span></span>
-<span><span class="co">## [33] cluster_2.1.4                 R6_2.5.1                     </span></span>
-<span><span class="co">## [35] bslib_0.4.2                   stringi_1.7.12               </span></span>
-<span><span class="co">## [37] jquerylib_0.1.4               Rcpp_1.0.10                  </span></span>
-<span><span class="co">## [39] bookdown_0.33                 knitr_1.42                   </span></span>
-<span><span class="co">## [41] httpuv_1.6.9                  Matrix_1.5-3                 </span></span>
-<span><span class="co">## [43] igraph_1.4.1                  tidyselect_1.2.0             </span></span>
-<span><span class="co">## [45] yaml_2.3.7                    codetools_0.2-19             </span></span>
-<span><span class="co">## [47] curl_5.0.0                    lattice_0.20-45              </span></span>
-<span><span class="co">## [49] tibble_3.2.0                  withr_2.5.0                  </span></span>
-<span><span class="co">## [51] shiny_1.7.4                   KEGGREST_1.39.0              </span></span>
-<span><span class="co">## [53] evaluate_0.20                 desc_1.4.2                   </span></span>
-<span><span class="co">## [55] BiocFileCache_2.7.2           Biostrings_2.67.0            </span></span>
-<span><span class="co">## [57] ExperimentHub_2.7.1           pillar_1.8.1                 </span></span>
-<span><span class="co">## [59] BiocManager_1.30.20           filelock_1.0.2               </span></span>
-<span><span class="co">## [61] DT_0.27                       ncdf4_1.21                   </span></span>
-<span><span class="co">## [63] generics_0.1.3                rprojroot_2.0.3              </span></span>
-<span><span class="co">## [65] RCurl_1.98-1.10               BiocVersion_3.17.1           </span></span>
-<span><span class="co">## [67] xtable_1.8-4                  glue_1.6.2                   </span></span>
-<span><span class="co">## [69] lazyeval_0.2.2                tools_4.3.0                  </span></span>
-<span><span class="co">## [71] AnnotationHub_3.7.3           mzR_2.33.0                   </span></span>
-<span><span class="co">## [73] fs_1.6.1                      grid_4.3.0                   </span></span>
-<span><span class="co">## [75] crosstalk_1.2.0               MsCoreUtils_1.11.5           </span></span>
-<span><span class="co">## [77] AnnotationDbi_1.61.1          GenomeInfoDbData_1.2.9       </span></span>
-<span><span class="co">## [79] cli_3.6.0                     rappdirs_0.3.3               </span></span>
-<span><span class="co">## [81] textshaping_0.3.6             fansi_1.0.4                  </span></span>
-<span><span class="co">## [83] dplyr_1.1.0                   AnnotationFilter_1.23.0      </span></span>
-<span><span class="co">## [85] sass_0.4.5                    digest_0.6.31                </span></span>
-<span><span class="co">## [87] htmlwidgets_1.6.1             memoise_2.0.1                </span></span>
-<span><span class="co">## [89] htmltools_0.5.4               pkgdown_2.0.7.9000           </span></span>
-<span><span class="co">## [91] lifecycle_1.0.3               httr_1.4.5                   </span></span>
-<span><span class="co">## [93] mime_0.12                     bit64_4.0.5                  </span></span>
-<span><span class="co">## [95] MASS_7.3-58.2</span></span></code></pre>
+<span><span class="co">##  [1] DBI_1.2.2               bitops_1.0-7            rlang_1.1.3            </span></span>
+<span><span class="co">##  [4] magrittr_2.0.3          clue_0.3-65             compiler_4.4.0         </span></span>
+<span><span class="co">##  [7] RSQLite_2.3.5           png_0.1-8               systemfonts_1.0.5      </span></span>
+<span><span class="co">## [10] vctrs_0.6.5             pkgconfig_2.0.3         MetaboCoreUtils_1.11.2 </span></span>
+<span><span class="co">## [13] crayon_1.5.2            fastmap_1.1.1           dbplyr_2.4.0           </span></span>
+<span><span class="co">## [16] XVector_0.43.1          ellipsis_0.3.2          utf8_1.2.4             </span></span>
+<span><span class="co">## [19] rmarkdown_2.26          ragg_1.2.7              purrr_1.0.2            </span></span>
+<span><span class="co">## [22] bit_4.0.5               xfun_0.42               zlibbioc_1.49.0        </span></span>
+<span><span class="co">## [25] cachem_1.0.8            jsonlite_1.8.8          blob_1.2.4             </span></span>
+<span><span class="co">## [28] DelayedArray_0.29.9     parallel_4.4.0          cluster_2.1.6          </span></span>
+<span><span class="co">## [31] R6_2.5.1                bslib_0.6.1             jquerylib_0.1.4        </span></span>
+<span><span class="co">## [34] Rcpp_1.0.12             bookdown_0.38           knitr_1.45             </span></span>
+<span><span class="co">## [37] Matrix_1.6-5            igraph_2.0.2            tidyselect_1.2.0       </span></span>
+<span><span class="co">## [40] abind_1.4-5             yaml_2.3.8              codetools_0.2-19       </span></span>
+<span><span class="co">## [43] curl_5.2.1              lattice_0.22-5          tibble_3.2.1           </span></span>
+<span><span class="co">## [46] withr_3.0.0             KEGGREST_1.43.0         evaluate_0.23          </span></span>
+<span><span class="co">## [49] desc_1.4.3              BiocFileCache_2.11.1    ExperimentHub_2.11.1   </span></span>
+<span><span class="co">## [52] Biostrings_2.71.2       pillar_1.9.0            BiocManager_1.30.22    </span></span>
+<span><span class="co">## [55] filelock_1.0.3          DT_0.32                 ncdf4_1.22             </span></span>
+<span><span class="co">## [58] generics_0.1.3          RCurl_1.98-1.14         BiocVersion_3.19.1     </span></span>
+<span><span class="co">## [61] glue_1.7.0              lazyeval_0.2.2          tools_4.4.0            </span></span>
+<span><span class="co">## [64] AnnotationHub_3.11.1    mzR_2.37.2              fs_1.6.3               </span></span>
+<span><span class="co">## [67] grid_4.4.0              crosstalk_1.2.1         MsCoreUtils_1.15.4     </span></span>
+<span><span class="co">## [70] AnnotationDbi_1.65.2    GenomeInfoDbData_1.2.11 cli_3.6.2              </span></span>
+<span><span class="co">## [73] rappdirs_0.3.3          textshaping_0.3.7       fansi_1.0.6            </span></span>
+<span><span class="co">## [76] S4Arrays_1.3.5          dplyr_1.1.4             AnnotationFilter_1.27.0</span></span>
+<span><span class="co">## [79] sass_0.4.8              digest_0.6.34           SparseArray_1.3.4      </span></span>
+<span><span class="co">## [82] htmlwidgets_1.6.4       memoise_2.0.1           htmltools_0.5.7        </span></span>
+<span><span class="co">## [85] pkgdown_2.0.7.9000      lifecycle_1.0.4         httr_1.4.7             </span></span>
+<span><span class="co">## [88] mime_0.12               bit64_4.0.5             MASS_7.3-60.2</span></span></code></pre>
 </div>
   </div>
 
