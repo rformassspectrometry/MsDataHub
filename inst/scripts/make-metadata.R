@@ -17,7 +17,8 @@ metadata <-
             "20171016_POOL_POS_1_105-134.mzML",
             "20171016_POOL_POS_3_105-134.mzML",
             "PestMix1_DDA.mzML",
-            "PestMix1_SWATH.mzML"
+            "PestMix1_SWATH.mzML",
+            "benchmarkingDIA.tsv"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -29,9 +30,10 @@ metadata <-
             "AB Sciex LC-MS data file (injection index 1), in mzML format. See ?sciex for details.",
             "AB Sciex LC-MS data file (injection index 19), in mzML format. See ?sciex for details.",
             "Triple TOF DDA raw data, in mzML format. See ?TripleTOF for details.",
-            "Triple TOF SWATH raw data, in mzML format. See ?TripleTOF for details."
+            "Triple TOF SWATH raw data, in mzML format. See ?TripleTOF for details.",
+            "Output of DIA-NN software (report.tsv)"
             ),
-        BiocVersion = rep("3.17", 10),
+        BiocVersion = rep("3.17", 11),
         Genome = "",
         SourceType = c(
             "CDF",
@@ -43,7 +45,8 @@ metadata <-
             "mzML",
             "mzML",
             "mzML",
-            "mzML"
+            "mzML",
+            "TSV"
         ),
         SourceUrl = c(
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
@@ -55,9 +58,10 @@ metadata <-
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
-            "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html"
+            "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
+            "https://zenodo.org/record/8063173"
             ),
-        SourceVersion = rep("1.0", 10),
+        SourceVersion = rep("1.0", 11),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -68,7 +72,8 @@ metadata <-
             "Homo sapiens",
             "Homo sapiens",
             "",
-            ""
+            "",
+            "Homo sapiens"
         ),
         TaxonomyId = c(
             "10090",
@@ -80,7 +85,8 @@ metadata <-
             "9606",
             "9606",
             "",
-            ""
+            "",
+            "9606"
         ),
         Coordinate_1_based = "",
         DataProvider = "",
@@ -95,9 +101,11 @@ metadata <-
             "Spectra",
             "Spectra",
             "Spectra",
-            "Spectra"
+            "Spectra",
+            "data.frame"
         ),
         DispatchClass = c(
+            "FilePath",
             "FilePath",
             "FilePath",
             "FilePath",
@@ -112,7 +120,11 @@ metadata <-
         ## NB: locally, the data are stored in the package's data
         ## directory, by in the Azure cloud, they are located in the
         ## package's root directory.
-        RDataPath = c(
+        Location_Prefix = c(
+          rep("", times = 10),
+          "https://zenodo.org/"
+        ),
+         RDataPath = c(
             "MsDataHub/cdf/ko15.CDF",
             "MsDataHub/cptac/cptac_a_b_c_peptides.txt",
             "MsDataHub/cptac/cptac_a_b_peptides.txt",
@@ -122,7 +134,8 @@ metadata <-
             "MsDataHub/sciex/20171016_POOL_POS_1_105-134.mzML",
             "MsDataHub/sciex/20171016_POOL_POS_3_105-134.mzML",
             "MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML",
-            "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML"
+            "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML",
+            "record/8063173/benchmarkingDIA.tsv"
         ),
         Tags = ""
     )
@@ -137,9 +150,14 @@ metadata[["Title"]] <- make.names(metadata[["Title"]])
 
 if (!grepl("MsDataHub/inst/scripts", getwd()))
     stop("Run from MsDataHub/inst/scripts")
-write.csv(metadata, file = "../extdata/metadata.csv", row.names = FALSE)
 
-pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
+library(here)
+write.csv(metadata, file = here("inst", "extdata", "metadata.csv"), row.names = FALSE)
+
+# pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
+#                         "MsDataHub")
+
+pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~"),
                         "MsDataHub")
 
 AnnotationHubData::makeAnnotationHubMetadata(pathToPackage = pkg_source,
