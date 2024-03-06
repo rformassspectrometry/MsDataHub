@@ -1,5 +1,9 @@
 # MsDataHub 1.3
 
+## MsDataHub 1.3.2
+
+- Fix path to benchmarkingDIA.tsv on zenodo.
+
 ## MsDataHub 1.3.1
 
 - Add benchmarkingDIA data, contributed by Kristina Gomoryova.

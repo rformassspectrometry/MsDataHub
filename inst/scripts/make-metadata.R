@@ -59,7 +59,7 @@ metadata <-
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
-            "https://zenodo.org/record/8063173"
+            "https://zenodo.org/records/8063173"
             ),
         SourceVersion = rep("1.0", 11),
         Species = c(
@@ -135,7 +135,7 @@ metadata <-
             "MsDataHub/sciex/20171016_POOL_POS_3_105-134.mzML",
             "MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML",
             "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML",
-            "record/8063173/benchmarkingDIA.tsv"
+            "record/8063173/files/benchmarkingDIA.tsv"
         ),
         Tags = ""
     )
@@ -157,8 +157,10 @@ write.csv(metadata, file = here("inst", "extdata", "metadata.csv"), row.names = 
 # pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
 #                         "MsDataHub")
 
-pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~"),
+pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
                         "MsDataHub")
+
+stopifnot(file.exists(pkg_source))
 
 AnnotationHubData::makeAnnotationHubMetadata(pathToPackage = pkg_source,
                                              fileName = "metadata.csv")
