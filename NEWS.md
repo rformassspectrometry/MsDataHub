@@ -1,12 +1,17 @@
 # MsDataHub 1.3
 
+## MsDataHub 1.3.3
+
+- Add `Report.Derks2022.plexDIA.tsv`, plexDIA DIA-NN output from Derks
+  et al. (2022).
+
 ## MsDataHub 1.3.2
 
-- Fix path to benchmarkingDIA.tsv on zenodo.
+- Fix path to `benchmarkingDIA.tsv` on zenodo.
 
 ## MsDataHub 1.3.1
 
-- Add benchmarkingDIA data, contributed by Kristina Gomoryova.
+- Add `benchmarkingDIA.tsv` data, contributed by Kristina Gomoryova.
 
 # MsDataHub 1.0
 

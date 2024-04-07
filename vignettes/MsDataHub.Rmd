@@ -146,6 +146,11 @@ f <- ko15.CDF()
 Spectra(f)
 ```
 
+## DIA-NN software outputs
+
+- Label-free DIA: `benchmarkingDIA.tsv`
+- mTRAQ plexDIA: `Report.Derks2022.plexDIA.tsv`
+
 # Adding data to `MsDataHub`
 
 1. If you would like additional dataset to `MsDataHub`, start by

@@ -18,7 +18,8 @@ metadata <-
             "20171016_POOL_POS_3_105-134.mzML",
             "PestMix1_DDA.mzML",
             "PestMix1_SWATH.mzML",
-            "benchmarkingDIA.tsv"
+            "benchmarkingDIA.tsv",
+            "Report-Derks2022-plexDIA.tsv"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -31,9 +32,10 @@ metadata <-
             "AB Sciex LC-MS data file (injection index 19), in mzML format. See ?sciex for details.",
             "Triple TOF DDA raw data, in mzML format. See ?TripleTOF for details.",
             "Triple TOF SWATH raw data, in mzML format. See ?TripleTOF for details.",
-            "Output of DIA-NN software (report.tsv)"
+            "Output of DIA-NN software (report.tsv)",
+            "Derk et al. (2022) single-cell proteomics plexDIA results (DIA-NN report.tsv)."
             ),
-        BiocVersion = rep("3.17", 11),
+        BiocVersion = c(rep("3.17", 11), "3.19"),
         Genome = "",
         SourceType = c(
             "CDF",
@@ -46,6 +48,7 @@ metadata <-
             "mzML",
             "mzML",
             "mzML",
+            "TSV",
             "TSV"
         ),
         SourceUrl = c(
@@ -59,9 +62,10 @@ metadata <-
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
-            "https://zenodo.org/records/8063173"
+            "https://zenodo.org/records/8063173",
+            "https://drive.google.com/drive/folders/1pUC2zgXKtKYn22mlor0lmUDK0frgwL_-"
             ),
-        SourceVersion = rep("1.0", 11),
+        SourceVersion = rep("1.0", 12),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -73,6 +77,7 @@ metadata <-
             "Homo sapiens",
             "",
             "",
+            "Homo sapiens",
             "Homo sapiens"
         ),
         TaxonomyId = c(
@@ -86,6 +91,7 @@ metadata <-
             "9606",
             "",
             "",
+            "9606",
             "9606"
         ),
         Coordinate_1_based = "",
@@ -102,9 +108,11 @@ metadata <-
             "Spectra",
             "Spectra",
             "Spectra",
+            "data.frame",
             "data.frame"
         ),
         DispatchClass = c(
+            "FilePath",
             "FilePath",
             "FilePath",
             "FilePath",
@@ -122,6 +130,7 @@ metadata <-
         ## package's root directory.
         Location_Prefix = c(
           rep("", times = 10),
+          "https://zenodo.org/",
           "https://zenodo.org/"
         ),
          RDataPath = c(
@@ -135,7 +144,8 @@ metadata <-
             "MsDataHub/sciex/20171016_POOL_POS_3_105-134.mzML",
             "MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML",
             "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML",
-            "record/8063173/files/benchmarkingDIA.tsv"
+            "record/8063173/files/benchmarkingDIA.tsv",
+            "records/10938597/files/Report-Derks2022-plexDIA.tsv"
         ),
         Tags = ""
     )
@@ -152,12 +162,13 @@ if (!grepl("MsDataHub/inst/scripts", getwd()))
     stop("Run from MsDataHub/inst/scripts")
 
 library(here)
-write.csv(metadata, file = here("inst", "extdata", "metadata.csv"), row.names = FALSE)
+write.csv(metadata, file = here("inst", "extdata", "metadata.csv"),
+          row.names = FALSE)
 
 # pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
 #                         "MsDataHub")
 
-pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
+pkg_source <- file.path(ifelse(file.exists("~/dev"), "~/dev", "~/wrk"),
                         "MsDataHub")
 
 stopifnot(file.exists(pkg_source))

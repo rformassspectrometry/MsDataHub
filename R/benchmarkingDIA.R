@@ -6,7 +6,7 @@
 ##'
 ##' @description
 ##'
-##' This data were generated based on publicly available DIA
+##' These data were generated based on publicly available DIA
 ##' benchmarking dataset from Gotti et al. (2021). A subset of raw
 ##' data, containing "overlapped" in the File.Name were searched using
 ##' the DIA-NN software, and the resulting report.tsv (here labelled
