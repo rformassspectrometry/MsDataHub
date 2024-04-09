@@ -1,5 +1,10 @@
 # MsDataHub 1.3
 
+## MsDataHub 1.3.4
+
+- Update vignette: load `Report.Derks2022.plexDIA.tsv` and
+  `benchmarkingDIA.tsv` with latest QFeatures.
+
 ## MsDataHub 1.3.3
 
 - Add `Report.Derks2022.plexDIA.tsv`, plexDIA DIA-NN output from Derks

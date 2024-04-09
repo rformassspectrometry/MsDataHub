@@ -1,6 +1,8 @@
 ##' @title Derks 2022 plexDIA data
 ##'
-##' @name Report.Derks2022.plexDIA.tsv
+##' @name Report.Derks2022.plexDIA
+##'
+##' @aliases Report.Derks2022.plexDIA.tsv
 ##'
 ##' @description
 ##'

@@ -148,8 +148,28 @@ Spectra(f)
 
 ## DIA-NN software outputs
 
-- Label-free DIA: `benchmarkingDIA.tsv`
-- mTRAQ plexDIA: `Report.Derks2022.plexDIA.tsv`
+- Type: tab-delimited DIA quantitative proteomics data tables produced
+  by [DIA-NN](https://github.com/vdemichev/DiaNN).
+- Files:
+  - Label-free DIA: `benchmarkingDIA.tsv`
+  - mTRAQ plexDIA: `Report.Derks2022.plexDIA.tsv`
+- More details: `?benchmarkingDIA.tsv` and
+  `?Report.Derks2022.plexDIA.tsv`
+
+Load with
+
+```{r lfdia, eval = TRUE, message = FALSE}
+library(QFeatures)
+lfdia <- read.delim(MsDataHub::benchmarkingDIA.tsv())
+readQFeaturesFromDIANN(lfdia)
+```
+
+```{r pledia, eval = TRUE, message = FALSE}
+plexdia <- read.delim(MsDataHub::Report.Derks2022.plexDIA.tsv())
+readQFeaturesFromDIANN(plexdia, multiplexing = "mTRAQ")
+```
+
+
 
 # Adding data to `MsDataHub`
 
