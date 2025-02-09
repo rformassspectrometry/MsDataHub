@@ -19,7 +19,9 @@ metadata <-
             "PestMix1_DDA.mzML",
             "PestMix1_SWATH.mzML",
             "benchmarkingDIA.tsv",
-            "Report-Derks2022-plexDIA.tsv"
+            "Report-Derks2022-plexDIA.tsv",
+            "Ai2025_aCMs_report.tsv",
+            "Ai2025_iCMs_report.tsv"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -33,9 +35,11 @@ metadata <-
             "Triple TOF DDA raw data, in mzML format. See ?TripleTOF for details.",
             "Triple TOF SWATH raw data, in mzML format. See ?TripleTOF for details.",
             "Output of DIA-NN software (report.tsv)",
-            "Derk et al. (2022) single-cell proteomics plexDIA results (DIA-NN report.tsv)."
+            "Derk et al. (2022) single-cell proteomics plexDIA results (DIA-NN report.tsv).",
+            "Ai et al. (2025) Single Cell Proteomics Reveals Specific Cellular Subtypes in Cardiomyocytes Derived from Human iPSCs and Adult Hearts.",
+            "Ai et al. (2025) Single Cell Proteomics Reveals Specific Cellular Subtypes in Cardiomyocytes Derived from Human iPSCs and Adult Hearts."
             ),
-        BiocVersion = c(rep("3.17", 11), "3.19"),
+        BiocVersion = c(rep("3.17", 11), "3.19", "3.21", "3.21"),
         Genome = "",
         SourceType = c(
             "CDF",
@@ -48,6 +52,8 @@ metadata <-
             "mzML",
             "mzML",
             "mzML",
+            "TSV",
+            "TSV",
             "TSV",
             "TSV"
         ),
@@ -63,9 +69,11 @@ metadata <-
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://zenodo.org/records/8063173",
-            "https://drive.google.com/drive/folders/1pUC2zgXKtKYn22mlor0lmUDK0frgwL_-"
+            "https://drive.google.com/drive/folders/1pUC2zgXKtKYn22mlor0lmUDK0frgwL_-",
+            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/aCMs/report.tsv",
+            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/iCMs/report1.tsv"
             ),
-        SourceVersion = rep("1.0", 12),
+        SourceVersion = rep("1.0", 14),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -77,6 +85,8 @@ metadata <-
             "Homo sapiens",
             "",
             "",
+            "Homo sapiens",
+            "Homo sapiens",
             "Homo sapiens",
             "Homo sapiens"
         ),
@@ -91,6 +101,8 @@ metadata <-
             "9606",
             "",
             "",
+            "9606",
+            "9606",
             "9606",
             "9606"
         ),
@@ -109,6 +121,8 @@ metadata <-
             "Spectra",
             "Spectra",
             "data.frame",
+            "data.frame",
+            "data.frame",
             "data.frame"
         ),
         DispatchClass = c(
@@ -123,15 +137,18 @@ metadata <-
             "FilePath",
             "FilePath",
             "FilePath",
+            "FilePath",
+            "FilePath",
             "FilePath"
         ),
-        ## NB: locally, the data are stored in the package's data
-        ## directory, by in the Azure cloud, they are located in the
-        ## package's root directory.
+        ## NB: locally, the data are stored in the package's data directory, but
+        ## in the Azure cloud, they are located in the package's root directory.
         Location_Prefix = c(
           rep("", times = 10),
           "https://zenodo.org/",
-          "https://zenodo.org/"
+          "https://zenodo.org/",
+          "ftp://massive.ucsd.edu/",
+          "ftp://massive.ucsd.edu/"
         ),
          RDataPath = c(
             "MsDataHub/cdf/ko15.CDF",
@@ -145,7 +162,9 @@ metadata <-
             "MsDataHub/TripleTOF-SWATH/PestMix1_DDA.mzML",
             "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML",
             "record/8063173/files/benchmarkingDIA.tsv",
-            "records/10938597/files/Report-Derks2022-plexDIA.tsv"
+            "records/10938597/files/Report-Derks2022-plexDIA.tsv",
+            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/aCMs/report.tsv",
+            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/iCMs/report1.tsv"
         ),
         Tags = ""
     )
