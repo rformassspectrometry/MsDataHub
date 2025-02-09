@@ -1,48 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/articles/MsDataHub.html</loc>
-  </url>
-  <url>
-    <loc>/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/MsDataHub.html</loc>
-  </url>
-  <url>
-    <loc>/reference/PXD000001.html</loc>
-  </url>
-  <url>
-    <loc>/reference/Report.Derks2022.plexDIA.html</loc>
-  </url>
-  <url>
-    <loc>/reference/TripleTOF.html</loc>
-  </url>
-  <url>
-    <loc>/reference/benchmarkingDIA.html</loc>
-  </url>
-  <url>
-    <loc>/reference/cdf.html</loc>
-  </url>
-  <url>
-    <loc>/reference/cptac.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/sciex.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/articles/MsDataHub.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/Ai2025.html</loc></url>
+<url><loc>/reference/MsDataHub.html</loc></url>
+<url><loc>/reference/PXD000001.html</loc></url>
+<url><loc>/reference/Report.Derks2022.plexDIA.html</loc></url>
+<url><loc>/reference/TripleTOF.html</loc></url>
+<url><loc>/reference/benchmarkingDIA.html</loc></url>
+<url><loc>/reference/cdf.html</loc></url>
+<url><loc>/reference/cptac.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/sciex.html</loc></url>
 </urlset>
+
