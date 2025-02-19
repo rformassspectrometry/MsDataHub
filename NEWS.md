@@ -1,3 +1,10 @@
+# MsDataHub 1.7
+
+## MsDataHub 1.7.1
+
+- DIA-NN report files from Ai et al (2025) for adult and iPSC-derived
+  cardiomyocytes single-cell proteomics data.
+
 # MsDataHub 1.3
 
 ## MsDataHub 1.3.4

@@ -9,7 +9,7 @@ stopifnot(grepl("MsDataHub/inst/scripts", getwd()))
 ## force download data, delete MsDataHub/data/*.
 
 ## NB: locally, the data are stored in the package's data directory,
-## by in the Azure cloud, they are located in the package's root
+## but in the Azure cloud, they are located in the package's root
 ## directory.
 
 for (f in make_data) {

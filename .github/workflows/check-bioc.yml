@@ -208,6 +208,10 @@ jobs:
           BiocManager::install("BiocCheck")
         shell: Rscript {0}
 
+      - name: Install QFeatures from Github
+        run: BiocManager::install("RforMassSpectrometry/QFeatures")
+        shell: Rscript {0}
+
       - name: Session info
         run: |
           options(width = 100)

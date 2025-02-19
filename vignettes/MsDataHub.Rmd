@@ -169,6 +169,14 @@ plexdia <- read.delim(MsDataHub::Report.Derks2022.plexDIA.tsv())
 readQFeaturesFromDIANN(plexdia, multiplexing = "mTRAQ")
 ```
 
+## DIA-NN single-cell proteomics reports
+
+- Type: tab-delimited DIA quantitative proteomics data tables produced
+  by [DIA-NN](https://github.com/vdemichev/DiaNN).
+- Files:
+  - Single-cell abel-free: `Ai2025_aCMs_report.tsv`
+  - Single-cell label-free: `Ai2025_iCMs_report.tsv`
+- More details: `?Ai2025`.
 
 
 # Adding data to `MsDataHub`
