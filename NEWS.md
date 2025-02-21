@@ -1,5 +1,9 @@
 # MsDataHub 1.7
 
+## MsDataHub 1.7.2
+
+- Fix space in latest resource URLs.
+
 ## MsDataHub 1.7.1
 
 - DIA-NN report files from Ai et al (2025) for adult and iPSC-derived
