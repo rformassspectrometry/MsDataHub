@@ -1,6 +1,6 @@
 Package: MsDataHub
 Title: Mass Spectrometry Data on ExperimentHub
-Version: 1.7.1
+Version: 1.7.2
 Authors@R:
     c(person(given = "Laurent",
              family = "Gatto",

@@ -70,8 +70,8 @@ metadata <-
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://zenodo.org/records/8063173",
             "https://drive.google.com/drive/folders/1pUC2zgXKtKYn22mlor0lmUDK0frgwL_-",
-            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/aCMs/report.tsv",
-            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/iCMs/report1.tsv"
+            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/aCMs/report.tsv",
+            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv"
             ),
         SourceVersion = rep("1.0", 14),
         Species = c(
@@ -163,8 +163,8 @@ metadata <-
             "MsDataHub/TripleTOF-SWATH/PestMix1_SWATH.mzML",
             "record/8063173/files/benchmarkingDIA.tsv",
             "records/10938597/files/Report-Derks2022-plexDIA.tsv",
-            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/aCMs/report.tsv",
-            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary+Files/iCMs/report1.tsv"
+            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/aCMs/report.tsv",
+            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv"
         ),
         Tags = ""
     )
