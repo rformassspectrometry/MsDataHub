@@ -21,7 +21,10 @@ metadata <-
             "benchmarkingDIA.tsv",
             "Report-Derks2022-plexDIA.tsv",
             "Ai2025_aCMs_report.tsv",
-            "Ai2025_iCMs_report.tsv"
+            "Ai2025_iCMs_report.tsv",
+            "crap_gpm.fasta",
+            "crap_ccp.fasta",
+            "crap_maxquant.fasta.gz"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -37,9 +40,12 @@ metadata <-
             "Output of DIA-NN software (report.tsv)",
             "Derk et al. (2022) single-cell proteomics plexDIA results (DIA-NN report.tsv).",
             "Ai et al. (2025) Single Cell Proteomics Reveals Specific Cellular Subtypes in Cardiomyocytes Derived from Human iPSCs and Adult Hearts.",
-            "Ai et al. (2025) Single Cell Proteomics Reveals Specific Cellular Subtypes in Cardiomyocytes Derived from Human iPSCs and Adult Hearts."
+            "Ai et al. (2025) Single Cell Proteomics Reveals Specific Cellular Subtypes in Cardiomyocytes Derived from Human iPSCs and Adult Hearts.",
+            "common Repository of Adventitious Proteins (cRAP) from the Global Proteome Machine (GPM)",
+            "common Repository of Adventitious Proteins (cRAP) from the Cambridge Centre for Proteomics (CCP)",
+            "MaxQuant's contaminant database"
             ),
-        BiocVersion = c(rep("3.17", 11), "3.19", "3.21", "3.21"),
+        BiocVersion = c(rep("3.17", 11), "3.19", "3.21", "3.21", "3.21", "3.21", "3.21"),
         Genome = "",
         SourceType = c(
             "CDF",
@@ -55,8 +61,11 @@ metadata <-
             "TSV",
             "TSV",
             "TSV",
-            "TSV"
-        ),
+            "TSV",
+            "FASTA",
+            "FASTA",
+            "FASTA"
+       ),
         SourceUrl = c(
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt",
@@ -71,9 +80,12 @@ metadata <-
             "https://zenodo.org/records/8063173",
             "https://drive.google.com/drive/folders/1pUC2zgXKtKYn22mlor0lmUDK0frgwL_-",
             "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/aCMs/report.tsv",
-            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv"
+            "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv",
+            "https://zenodo.org/records/15115102/files/crap_gpm.fasta",
+            "https://zenodo.org/records/15115102/files/crap_ccp.fasta",
+            "https://zenodo.org/records/15115102/files/crap_maxquant.fasta.gz"
             ),
-        SourceVersion = rep("1.0", 14),
+        SourceVersion = rep("1.0", 17),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -88,7 +100,10 @@ metadata <-
             "Homo sapiens",
             "Homo sapiens",
             "Homo sapiens",
-            "Homo sapiens"
+            "Homo sapiens",
+            "",
+            "",
+            ""
         ),
         TaxonomyId = c(
             "10090",
@@ -104,7 +119,10 @@ metadata <-
             "9606",
             "9606",
             "9606",
-            "9606"
+            "9606",
+            "",
+            "",
+            ""
         ),
         Coordinate_1_based = "",
         DataProvider = "",
@@ -123,9 +141,15 @@ metadata <-
             "data.frame",
             "data.frame",
             "data.frame",
-            "data.frame"
+            "data.frame",
+            "AAStringSet",
+            "AAStringSet",
+            "AAStringSet"
         ),
         DispatchClass = c(
+            "FilePath",
+            "FilePath",
+            "FilePath",
             "FilePath",
             "FilePath",
             "FilePath",
@@ -148,7 +172,10 @@ metadata <-
           "https://zenodo.org/",
           "https://zenodo.org/",
           "ftp://massive.ucsd.edu/",
-          "ftp://massive.ucsd.edu/"
+          "ftp://massive.ucsd.edu/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/"
         ),
          RDataPath = c(
             "MsDataHub/cdf/ko15.CDF",
@@ -164,9 +191,12 @@ metadata <-
             "record/8063173/files/benchmarkingDIA.tsv",
             "records/10938597/files/Report-Derks2022-plexDIA.tsv",
             "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/aCMs/report.tsv",
-            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv"
-        ),
-        Tags = ""
+            "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv",
+            "records/15115102/files/crap_gpm.fasta",
+            "records/15115102/files/crap_ccp.fasta",
+            "records/15115102/files/crap_maxquant.fasta.gz"
+         ),
+       Tags = ""
     )
 
 

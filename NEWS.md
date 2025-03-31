@@ -1,5 +1,9 @@
 # MsDataHub 1.7
 
+## MsDataHub 1.7.3
+
+- Add cRAP contaminant databases.
+
 ## MsDataHub 1.7.2
 
 - Fix space in latest resource URLs.
