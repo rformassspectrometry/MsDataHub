@@ -34,4 +34,4 @@
 ##'   set]. Zenodo. https://doi.org/10.5281/zenodo.15115102
 ##'
 ##' @author Laurent Gatto
-NULL\
+NULL
