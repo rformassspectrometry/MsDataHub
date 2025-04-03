@@ -178,6 +178,18 @@ readQFeaturesFromDIANN(plexdia, multiplexing = "mTRAQ")
   - Single-cell label-free: `Ai2025_iCMs_report.tsv`
 - More details: `?Ai2025`.
 
+## Proteomics contaminant databases
+
+- Type: fasta files, as documented in `camprotR`'s [cRAP
+  databases](https://cambridgecentreforproteomics.github.io/camprotR/articles/crap.html)
+  vignette.
+- Files:
+  - `crap_gpm.fasta`: the common Repository of Adventitious Proteins
+    (cRAP) from the Global Proteome Machine (GPM) organisation.
+  - `crap_ccp.fasta`: Cambridge Centre for Proteomics' own cRAP fasta
+    database.
+  - `crap_maxquant.fasta.gz`: MaxQuant's contaminant database.
+- More details: `?cRAP`.
 
 # Adding data to `MsDataHub`
 
