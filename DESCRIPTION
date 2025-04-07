@@ -1,6 +1,6 @@
 Package: MsDataHub
 Title: Mass Spectrometry Data on ExperimentHub
-Version: 1.7.3
+Version: 1.7.4
 Authors@R:
     c(person(given = "Laurent",
              family = "Gatto",
@@ -46,4 +46,3 @@ VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Config/testthat/edition: 3
-
