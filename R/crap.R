@@ -2,7 +2,7 @@
 ##'
 ##' @name cRAP
 ##'
-##' @aliases crap contaminatants
+##' @aliases crap contaminatants crap_ccp.fasta crap_gpm.fasta crap_maxquant.fasta.gz
 ##'
 ##' @description
 ##'
@@ -30,8 +30,8 @@
 ##' - cRAP databases vignette: https://cambridgecentreforproteomics.github.io/camprotR/articles/crap.html
 ##' - cRPA protein sequences (GPM): https://www.thegpm.org/crap/
 ##' - camprotR package: https://cambridgecentreforproteomics.github.io/camprotR/index.html
-##' - Gatto, L. (2025). Proteomics contaminant databases (1.0) [Data
-##'   set]. Zenodo. https://doi.org/10.5281/zenodo.15115102
+##' - Gatto, L. (2025). Proteomics contaminant databases
+##'   (1.0). Zenodo. https://doi.org/10.5281/zenodo.15115102
 ##'
 ##' @author Laurent Gatto
 NULL

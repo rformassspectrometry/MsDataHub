@@ -1,5 +1,9 @@
 # MsDataHub 1.7
 
+## MsDataHub 1.7.4
+
+- Fix documentation.
+
 ## MsDataHub 1.7.3
 
 - Add cRAP contaminant databases.

@@ -4,6 +4,9 @@
 \alias{cRAP}
 \alias{crap}
 \alias{contaminatants}
+\alias{crap_ccp.fasta}
+\alias{crap_gpm.fasta}
+\alias{crap_maxquant.fasta.gz}
 \title{Contaminant and cRAP databases}
 \description{
 These 3 fasta files are widely used proteomics contaminants. The files are:
@@ -29,8 +32,8 @@ maintainer of the \code{camprotR} package.
 \item cRAP databases vignette: https://cambridgecentreforproteomics.github.io/camprotR/articles/crap.html
 \item cRPA protein sequences (GPM): https://www.thegpm.org/crap/
 \item camprotR package: https://cambridgecentreforproteomics.github.io/camprotR/index.html
-\item Gatto, L. (2025). Proteomics contaminant databases (1.0) \link[=Data
-  set]{Data set}. Zenodo. https://doi.org/10.5281/zenodo.15115102
+\item Gatto, L. (2025). Proteomics contaminant databases
+(1.0). Zenodo. https://doi.org/10.5281/zenodo.15115102
 }
 }
 \author{
