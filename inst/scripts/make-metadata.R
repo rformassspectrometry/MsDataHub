@@ -24,7 +24,9 @@ metadata <-
             "Ai2025_iCMs_report.tsv",
             "crap_gpm.fasta",
             "crap_ccp.fasta",
-            "crap_maxquant.fasta.gz"
+            "crap_maxquant.fasta.gz",
+            "CEMS_10ppm.mzML",
+            "CEMS_25ppm.mzML"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -43,9 +45,11 @@ metadata <-
             "Ai et al. (2025) Single Cell Proteomics Reveals Specific Cellular Subtypes in Cardiomyocytes Derived from Human iPSCs and Adult Hearts.",
             "common Repository of Adventitious Proteins (cRAP) from the Global Proteome Machine (GPM)",
             "common Repository of Adventitious Proteins (cRAP) from the Cambridge Centre for Proteomics (CCP)",
-            "MaxQuant's contaminant database"
+            "MaxQuant's contaminant database",
+            "CE-MS data file (10ppm), in mzML format. See ?CEMS for details.",
+            "CE-MS data file (25ppm) in mzML format. See ?CEMS for details."
             ),
-        BiocVersion = c(rep("3.17", 11), "3.19", "3.21", "3.21", "3.21", "3.21", "3.21"),
+        BiocVersion = c(rep("3.17", 11), "3.19", "3.21", "3.21", "3.21", "3.21", "3.21", "3.22", "3.22"),
         Genome = "",
         SourceType = c(
             "CDF",
@@ -64,7 +68,9 @@ metadata <-
             "TSV",
             "FASTA",
             "FASTA",
-            "FASTA"
+            "FASTA",
+            "mzML",
+            "mzML"
        ),
         SourceUrl = c(
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
@@ -83,9 +89,11 @@ metadata <-
             "ftp://massive.ucsd.edu/v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv",
             "https://zenodo.org/records/15115102/files/crap_gpm.fasta",
             "https://zenodo.org/records/15115102/files/crap_ccp.fasta",
-            "https://zenodo.org/records/15115102/files/crap_maxquant.fasta.gz"
+            "https://zenodo.org/records/15115102/files/crap_maxquant.fasta.gz",
+            "https://zenodo.org/records/18481720/files/CEMS_10ppm.mzML",
+            "https://zenodo.org/records/18481720/files/CEMS_25ppm.mzML"
             ),
-        SourceVersion = rep("1.0", 17),
+        SourceVersion = rep("1.0", 19),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -101,6 +109,8 @@ metadata <-
             "Homo sapiens",
             "Homo sapiens",
             "Homo sapiens",
+            "",
+            "",
             "",
             "",
             ""
@@ -120,6 +130,8 @@ metadata <-
             "9606",
             "9606",
             "9606",
+            "",
+            "",
             "",
             "",
             ""
@@ -144,9 +156,13 @@ metadata <-
             "data.frame",
             "AAStringSet",
             "AAStringSet",
-            "AAStringSet"
+            "AAStringSet",
+            "Spectra",
+            "Spectra"
         ),
         DispatchClass = c(
+            "FilePath",
+            "FilePath",
             "FilePath",
             "FilePath",
             "FilePath",
@@ -175,6 +191,8 @@ metadata <-
           "ftp://massive.ucsd.edu/",
           "https://zenodo.org/",
           "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
           "https://zenodo.org/"
         ),
          RDataPath = c(
@@ -194,7 +212,9 @@ metadata <-
             "v07/MSV000094438/updates/2024-10-23_bineka_5deafa61/other/Supplementary%20Files/iCMs/report1.tsv",
             "records/15115102/files/crap_gpm.fasta",
             "records/15115102/files/crap_ccp.fasta",
-            "records/15115102/files/crap_maxquant.fasta.gz"
+            "records/15115102/files/crap_maxquant.fasta.gz",
+            "records/18481720/files/CEMS_10ppm.mzML",
+            "records/18481720/files/CEMS_25ppm.mzML"
          ),
        Tags = ""
     )
