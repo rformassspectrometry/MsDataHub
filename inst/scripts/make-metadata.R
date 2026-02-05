@@ -26,7 +26,17 @@ metadata <-
             "crap_ccp.fasta",
             "crap_maxquant.fasta.gz",
             "CEMS_10ppm.mzML",
-            "CEMS_25ppm.mzML"
+            "CEMS_25ppm.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp1.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp2.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp3.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp4.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp5.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp1.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp2.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp3.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp4.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp5.extracted.mzML"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -47,9 +57,29 @@ metadata <-
             "common Repository of Adventitious Proteins (cRAP) from the Cambridge Centre for Proteomics (CCP)",
             "MaxQuant's contaminant database",
             "CE-MS data file (10ppm), in mzML format. See ?CEMS for details.",
-            "CE-MS data file (25ppm) in mzML format. See ?CEMS for details."
+            "CE-MS data file (25ppm) in mzML format. See ?CEMS for details.",
+            "FTICR-MS data file HAM4, experiment 1, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM4, experiment 2, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM4, experiment 3, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM4, experiment 4, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM4, experiment 5, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM5, experiment 1, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM5, experiment 2, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM5, experiment 3, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM5, experiment 4, in mzML file. See ?FTICR for details",
+            "FTICR-MS data file HAM5, experiment 5, in mzML file. See ?FTICR for details"
             ),
-        BiocVersion = c(rep("3.17", 11), "3.19", "3.21", "3.21", "3.21", "3.21", "3.21", "3.22", "3.22"),
+        BiocVersion = c(
+            rep("3.17", 11),
+            "3.19",
+            "3.21",
+            "3.21",
+            "3.21",
+            "3.21",
+            "3.21",
+            "3.22",
+            "3.22",
+            rep("3.22", 10)),
         Genome = "",
         SourceType = c(
             "CDF",
@@ -70,7 +100,8 @@ metadata <-
             "FASTA",
             "FASTA",
             "mzML",
-            "mzML"
+            "mzML",
+            rep("mzML", 10)
        ),
         SourceUrl = c(
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
@@ -91,9 +122,19 @@ metadata <-
             "https://zenodo.org/records/15115102/files/crap_ccp.fasta",
             "https://zenodo.org/records/15115102/files/crap_maxquant.fasta.gz",
             "https://zenodo.org/records/18481720/files/CEMS_10ppm.mzML",
-            "https://zenodo.org/records/18481720/files/CEMS_25ppm.mzML"
+            "https://zenodo.org/records/18481720/files/CEMS_25ppm.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp1.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp2.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp3.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp4.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM004_641fE_14-11-07--Exp5.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp1.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp2.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp3.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp4.extracted.mzML",
+            "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp5.extracted.mzML"
             ),
-        SourceVersion = rep("1.0", 19),
+        SourceVersion = rep("1.0", 29),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -113,7 +154,8 @@ metadata <-
             "",
             "",
             "",
-            ""
+            "",
+            rep("", 10)
         ),
         TaxonomyId = c(
             "10090",
@@ -134,7 +176,8 @@ metadata <-
             "",
             "",
             "",
-            ""
+            "",
+            rep("", 10)
         ),
         Coordinate_1_based = "",
         DataProvider = "",
@@ -158,7 +201,8 @@ metadata <-
             "AAStringSet",
             "AAStringSet",
             "Spectra",
-            "Spectra"
+            "Spectra",
+            rep("Spectra", 10)
         ),
         DispatchClass = c(
             "FilePath",
@@ -179,7 +223,8 @@ metadata <-
             "FilePath",
             "FilePath",
             "FilePath",
-            "FilePath"
+            "FilePath",
+            rep("FilePath", 10)
         ),
         ## NB: locally, the data are stored in the package's data directory, but
         ## in the Azure cloud, they are located in the package's root directory.
@@ -189,6 +234,16 @@ metadata <-
           "https://zenodo.org/",
           "ftp://massive.ucsd.edu/",
           "ftp://massive.ucsd.edu/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
           "https://zenodo.org/",
           "https://zenodo.org/",
           "https://zenodo.org/",
@@ -214,7 +269,17 @@ metadata <-
             "records/15115102/files/crap_ccp.fasta",
             "records/15115102/files/crap_maxquant.fasta.gz",
             "records/18481720/files/CEMS_10ppm.mzML",
-            "records/18481720/files/CEMS_25ppm.mzML"
+            "records/18481720/files/CEMS_25ppm.mzML",
+            "records/18494294/files/HAM004_641fE_14-11-07--Exp1.extracted.mzML",
+            "records/18494294/files/HAM004_641fE_14-11-07--Exp2.extracted.mzML",
+            "records/18494294/files/HAM004_641fE_14-11-07--Exp3.extracted.mzML",
+            "records/18494294/files/HAM004_641fE_14-11-07--Exp4.extracted.mzML",
+            "records/18494294/files/HAM004_641fE_14-11-07--Exp5.extracted.mzML",
+            "records/18494294/files/HAM005_641fE_14-11-07--Exp1.extracted.mzML",
+            "records/18494294/files/HAM005_641fE_14-11-07--Exp2.extracted.mzML",
+            "records/18494294/files/HAM005_641fE_14-11-07--Exp3.extracted.mzML",
+            "records/18494294/files/HAM005_641fE_14-11-07--Exp4.extracted.mzML",
+            "records/18494294/files/HAM005_641fE_14-11-07--Exp5.extracted.mzML"
          ),
        Tags = ""
     )
