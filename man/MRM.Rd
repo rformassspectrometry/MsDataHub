@@ -2,7 +2,7 @@
 % Please edit documentation in R/MRM.R
 \name{MRM}
 \alias{MRM}
-\alias{MRM-standmix-5.mzML}
+\alias{MRM.standmix.5.mzML}
 \title{Multiple Reaction Monitoring mode (MRM) test files}
 \description{
 \itemize{

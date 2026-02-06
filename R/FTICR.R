@@ -2,16 +2,16 @@
 #'
 #' @name FTICR
 #'
-#' @aliases HAM004_641fE_14-11-07..Exp1.extracted.mzML
-#' @aliases HAM004_641fE_14-11-07..Exp2.extracted.mzML
-#' @aliases HAM004_641fE_14-11-07..Exp3.extracted.mzML
-#' @aliases HAM004_641fE_14-11-07..Exp4.extracted.mzML
-#' @aliases HAM004_641fE_14-11-07..Exp5.extracted.mzML
-#' @aliases HAM005_641fE_14-11-07..Exp1.extracted.mzML
-#' @aliases HAM005_641fE_14-11-07..Exp2.extracted.mzML
-#' @aliases HAM005_641fE_14-11-07..Exp3.extracted.mzML
-#' @aliases HAM005_641fE_14-11-07..Exp4.extracted.mzML
-#' @aliases HAM005_641fE_14-11-07..Exp5.extracted.mzML
+#' @aliases HAM004_641fE_14.11.07..Exp1.extracted.mzML
+#' @aliases HAM004_641fE_14.11.07..Exp2.extracted.mzML
+#' @aliases HAM004_641fE_14.11.07..Exp3.extracted.mzML
+#' @aliases HAM004_641fE_14.11.07..Exp4.extracted.mzML
+#' @aliases HAM004_641fE_14.11.07..Exp5.extracted.mzML
+#' @aliases HAM005_641fE_14.11.07..Exp1.extracted.mzML
+#' @aliases HAM005_641fE_14.11.07..Exp2.extracted.mzML
+#' @aliases HAM005_641fE_14.11.07..Exp3.extracted.mzML
+#' @aliases HAM005_641fE_14.11.07..Exp4.extracted.mzML
+#' @aliases HAM005_641fE_14.11.07..Exp5.extracted.mzML
 #'
 #' @description
 #'

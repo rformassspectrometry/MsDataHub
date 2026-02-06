@@ -2,7 +2,7 @@
 #'
 #' @name MRM
 #' 
-#' @aliases MRM-standmix-5.mzML
+#' @aliases MRM.standmix.5.mzML
 #' 
 #' @description
 #'
