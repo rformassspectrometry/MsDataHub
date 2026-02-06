@@ -27,6 +27,8 @@ Files:
 \item \code{"CEMS_10ppm.mzML"}
 \item \code{"CEMS_25ppm.mzML"}
 }
+
+Data location \href{https://doi.org/10.5281/zenodo.18481720}{DOI:10.5281/zenodo.18481720}
 }
 \author{
 Liesa Salzer

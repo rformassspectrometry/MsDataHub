@@ -27,6 +27,8 @@
 #' - `"CEMS_10ppm.mzML"`
 #'
 #' - `"CEMS_25ppm.mzML"`
+#'
+#' Data location [DOI:10.5281/zenodo.18481720](https://doi.org/10.5281/zenodo.18481720)
 #' 
 #' @author Liesa Salzer
 NULL

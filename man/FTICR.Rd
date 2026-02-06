@@ -2,16 +2,16 @@
 % Please edit documentation in R/FTICR.R
 \name{FTICR}
 \alias{FTICR}
-\alias{HAM004_641fE_14-11-07--Exp1.extracted.mzML}
-\alias{HAM004_641fE_14-11-07--Exp2.extracted.mzML}
-\alias{HAM004_641fE_14-11-07--Exp3.extracted.mzML}
-\alias{HAM004_641fE_14-11-07--Exp4.extracted.mzML}
-\alias{HAM004_641fE_14-11-07--Exp5.extracted.mzML}
-\alias{HAM005_641fE_14-11-07--Exp1.extracted.mzML}
-\alias{HAM005_641fE_14-11-07--Exp2.extracted.mzML}
-\alias{HAM005_641fE_14-11-07--Exp3.extracted.mzML}
-\alias{HAM005_641fE_14-11-07--Exp4.extracted.mzML}
-\alias{HAM005_641fE_14-11-07--Exp5.extracted.mzML}
+\alias{HAM004_641fE_14-11-07..Exp1.extracted.mzML}
+\alias{HAM004_641fE_14-11-07..Exp2.extracted.mzML}
+\alias{HAM004_641fE_14-11-07..Exp3.extracted.mzML}
+\alias{HAM004_641fE_14-11-07..Exp4.extracted.mzML}
+\alias{HAM004_641fE_14-11-07..Exp5.extracted.mzML}
+\alias{HAM005_641fE_14-11-07..Exp1.extracted.mzML}
+\alias{HAM005_641fE_14-11-07..Exp2.extracted.mzML}
+\alias{HAM005_641fE_14-11-07..Exp3.extracted.mzML}
+\alias{HAM005_641fE_14-11-07..Exp4.extracted.mzML}
+\alias{HAM005_641fE_14-11-07..Exp5.extracted.mzML}
 \title{FTICR-MS data files}
 \description{
 Direct injection  fourier-transform ion cyclotron resonance (FTICR) mass
@@ -30,6 +30,8 @@ Files:
 \item HAM005_641fE_14-11-07--Exp4.extracted.mzML
 \item HAM005_641fE_14-11-07--Exp5.extracted.mzML
 }
+
+Data location: \href{https://doi.org/10.5281/zenodo.18494294}{DOI:10.5281/zenodo.18494294}
 }
 \author{
 Mark Haid
