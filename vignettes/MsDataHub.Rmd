@@ -191,6 +191,75 @@ readQFeaturesFromDIANN(plexdia, multiplexing = "mTRAQ")
   - `crap_maxquant.fasta.gz`: MaxQuant's contaminant database.
 - More details: `?cRAP`.
 
+## FTICR-MS direct injection MS data
+
+Example files for direct injection fourier-transform ion cyclotron resonance
+(FTICR) mass spectrometry data.
+
+- Type: raw MS data in mzML file format.
+- Files: 5 replicates from sample *HAM004*, 5 replicates from sample *HAM005*,
+  i.e., 10 mzML files.
+- More details: `?FTICR`.
+
+Example how to load one of the available files:
+
+```{r}
+f <- MsDataHub::HAM004_641fE_14.11.07..Exp1.extracted.mzML()
+Spectra(f)
+```
+
+## MRM data file
+
+Example file in mzML format for multiple reaction monitoring (MRM) data. The
+file does not contain mass spectra, but chromatographic data. The data can be
+imported and represented with the *Chromatograms* Bioconductor package.
+
+- Type: raw (chromatographic) MS data in mzML file format.
+- Files:
+  - `MRM-standmix-5.mzML`: sample from mouse brain acquired by HILIC
+    ESI-QqQ/MS in Dynamic multiple reaction monitoring mode (MRM). HPLC
+    system was a 1290 Infinity (Agilent Technologies) coupled to ion-Funnel
+    Triple quadrupole 6490 mass spectrometer (Agilent Technologies). This
+    file was contributed by Xavi Domingo-Almenara from the The Scripps
+    Research Institute, San Diego, CA.
+- More details: `?MRM`.
+
+Load with
+
+```{r}
+f <- MsDataHub::MRM.standmix.5.mzML()
+```
+
+## CE-MS data
+
+The CE-MS test files consist of two files, `"CEMS_10ppm.mzML"` and
+`"CEMS_25ppm.mzML"`. The data contains CE-MS runs of a standard mixture that
+contains e.g. Lysine (at 10 ppm and 25 ppm, respectively) and the neutral EOF
+marker Paracetamol (50 ppm). The data was acquired on a 7100 capillary
+electrophoresis system from Agilent Technologies, coupled to an Agilent 6560
+IM-QToF-MS. CE Separation was performed using a 80 cm fused silica capillary
+with an internal diameter of 50 µm and external diameter of 365 µm. The
+Background Electrolyte was 10 % acetic acid and separation was performed at +30
+kV and a constant pressure of 50 mbar.  MS detection was performed in positive
+ionization mode.
+
+The raw data were then converted to the open-source *.mzML* format
+(Proteowizard). To reduce data size, the test data was subset to a retention
+time range from 400 to 900 seconds and an *m/z* range from 147.1 to 152.0.
+
+- Type: raw MS data in mzML file format.
+- Files:
+  - `CEMS_10ppm.mzML`: sample with Lysine added in 10ppm.
+  - `CEMS_25ppm.mzML`: sample with Lysine added in 25ppm.
+- More details: `?CEMS`.
+
+Load with
+
+```{r}
+f <- MsDataHub::CEMS_25ppm.mzML()
+s <- Spectra(f)
+```
+
 # Adding data to `MsDataHub`
 
 1. If you would like additional dataset to `MsDataHub`, start by
