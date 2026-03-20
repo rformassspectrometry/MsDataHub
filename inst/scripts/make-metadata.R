@@ -37,7 +37,10 @@ metadata <-
             "HAM005_641fE_14-11-07--Exp3.extracted.mzML",
             "HAM005_641fE_14-11-07--Exp4.extracted.mzML",
             "HAM005_641fE_14-11-07--Exp5.extracted.mzML",
-            "MRM-standmix-5.mzML"
+            "MRM-standmix-5.mzML",
+            "MS3TMT11.mzML",
+            "MS3TMT10_01022016_32917-33481.mzML.gz",
+            "fdms3tmt11.rda"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -69,7 +72,10 @@ metadata <-
             "FTICR-MS data file HAM5, experiment 3, in mzML file. See ?FTICR for details",
             "FTICR-MS data file HAM5, experiment 4, in mzML file. See ?FTICR for details",
             "FTICR-MS data file HAM5, experiment 5, in mzML file. See ?FTICR for details",
-            "Multiple Reaction Monitoring mode (MRM) file from a mouse brain sample. See ?MRM fo details"
+            "Multiple Reaction Monitoring mode (MRM) file from a mouse brain sample. See ?MRM fo details",
+            "A subset of 994 spectra from a currenly unpublished MS3 SPS TMT 11-plex experiment",
+            "A subset of 565 spectra from a currenly unpublished MS3 SPS TMT 10-plex experiment",
+            "Feature data of the MS3TMT11 data"
             ),
         BiocVersion = c(
             rep("3.17", 11),
@@ -82,7 +88,8 @@ metadata <-
             "3.22",
             "3.22",
             rep("3.22", 10),
-            "3.22"
+            "3.22",
+            rep("3.22", 3)
         ),
         Genome = "",
         SourceType = c(
@@ -106,7 +113,10 @@ metadata <-
             "mzML",
             "mzML",
             rep("mzML", 10),
-            "mzML"
+            "mzML",
+            "mzML",
+            "mzML",
+            "RDA"
        ),
         SourceUrl = c(
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
@@ -138,9 +148,12 @@ metadata <-
             "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp3.extracted.mzML",
             "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp4.extracted.mzML",
             "https://zenodo.org/records/18494294/files/HAM005_641fE_14-11-07--Exp5.extracted.mzML",
-            "https://zenodo.org/records/18502866/files/MRM-standmix-5.mzML"
+            "https://zenodo.org/records/18502866/files/MRM-standmix-5.mzML",
+            "https://zenodo.org/records/19127509/files/MS3TMT11.mzML",
+            "https://zenodo.org/records/19127509/files/MS3TMT10_01022016_32917-33481.mzML.gz",
+            "https://zenodo.org/records/19127509/files/fdms3tmt11.rda"
         ),
-        SourceVersion = rep("1.0", 30),
+        SourceVersion = rep("1.0", 33),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -162,7 +175,8 @@ metadata <-
             "",
             "",
             rep("", 10),
-            "Mus musculus"
+            "Mus musculus",
+            rep("", 3)
         ),
         TaxonomyId = c(
             "10090",
@@ -185,7 +199,8 @@ metadata <-
             "",
             "",
             rep("", 10),
-            "10090"
+            "10090",
+            rep("", 3)
         ),
         Coordinate_1_based = "",
         DataProvider = "",
@@ -211,7 +226,10 @@ metadata <-
             "Spectra",
             "Spectra",
             rep("Spectra", 10),
-            "Spectra"
+            "Spectra",
+            "Spectra",
+            "Spectra",
+            "data.frame"
         ),
         DispatchClass = c(
             "FilePath",
@@ -234,7 +252,8 @@ metadata <-
             "FilePath",
             "FilePath",
             rep("FilePath", 10),
-            "FilePath"
+            "FilePath",
+            rep("FilePath", 3)
         ),
         ## NB: locally, the data are stored in the package's data directory, but
         ## in the Azure cloud, they are located in the package's root directory.
@@ -244,6 +263,9 @@ metadata <-
           "https://zenodo.org/",
           "ftp://massive.ucsd.edu/",
           "ftp://massive.ucsd.edu/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
+          "https://zenodo.org/",
           "https://zenodo.org/",
           "https://zenodo.org/",
           "https://zenodo.org/",
@@ -291,7 +313,10 @@ metadata <-
             "records/18494294/files/HAM005_641fE_14-11-07--Exp3.extracted.mzML",
             "records/18494294/files/HAM005_641fE_14-11-07--Exp4.extracted.mzML",
             "records/18494294/files/HAM005_641fE_14-11-07--Exp5.extracted.mzML",
-            "records/18502866/files/MRM-standmix-5.mzML"
+            "records/18502866/files/MRM-standmix-5.mzML",
+            "records/19127509/files/MS3TMT11.mzML",
+            "records/19127509/files/MS3TMT10_01022016_32917-33481.mzML.gz",
+            "records/19127509/files/fdms3tmt11.rda"
          ),
        Tags = ""
     )

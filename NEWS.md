@@ -2,7 +2,7 @@
 
 # MsDataHub 1.11.2
 
-- Add description of the data sets to the package vignette.
+- Add MS3TMT data files.
 
 # MsDataHub 1.11.1
 
