@@ -23,5 +23,5 @@
 ##'
 ##' @author Laurent Gatto
 ##'
-##' @aliases MS3TMT10_01022016_32917-33481.mzML.gz MS3TMT11.mzML fdms3tmt11 fdms3tmt11.rda
+##' @aliases MS3TMT10_01022016_32917.33481.mzML.gz MS3TMT10_01022016_32917-33481.mzML.gz MS3TMT11.mzML fdms3tmt11 fdms3tmt11.rda
 NULL

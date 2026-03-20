@@ -2,6 +2,7 @@
 % Please edit documentation in R/MS3TMT.R
 \name{MS3TMT}
 \alias{MS3TMT}
+\alias{MS3TMT10_01022016_32917.33481.mzML.gz}
 \alias{MS3TMT10_01022016_32917-33481.mzML.gz}
 \alias{MS3TMT11.mzML}
 \alias{fdms3tmt11}
