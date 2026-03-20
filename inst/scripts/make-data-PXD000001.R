@@ -1,5 +1,7 @@
 ## PXD000001 files: raw mzML and identification data
 
+stop("Data have been removed from msdata.\nSee https://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/ for source.")
+
 if (!require("msdata"))
     BiocManager::install("msdata")
 

@@ -1,5 +1,9 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.2
+
+- Add MS3TMT data files.
+
 # MsDataHub 1.11.1
 
 - Add CE-MS test data files (see PR #11).
