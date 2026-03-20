@@ -260,6 +260,17 @@ f <- MsDataHub::CEMS_25ppm.mzML()
 s <- Spectra(f)
 ```
 
+## TMT MS3 SPS data
+
+Example MS3 SPS TMT data.
+
+- `MS3TMT10_01022016_32917-33481.mzML.gz` is an mzML file containing
+  565 spectra from a MS3 PSP TMT 10-pex experiment.
+- `MS3TMT11.mzML` is an mzML file containing 994 scans from MS3 SPS
+  TMT 11-plex experiment.
+- `fdms3tmt11.rda` contains a data.frame with identification data for
+  `MS3TMT11.mzML`.
+
 # Adding data to `MsDataHub`
 
 1. If you would like additional dataset to `MsDataHub`, start by
