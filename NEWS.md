@@ -7,6 +7,7 @@
 # MsDataHub 1.11.1
 
 - Add CE-MS test data files (see PR #11).
+- Add description of the data sets to the package vignette.
 
 # MsDataHub 1.7
 
