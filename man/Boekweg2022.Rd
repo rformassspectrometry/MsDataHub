@@ -82,7 +82,8 @@ MSV000087524 (doi:10.25345/C5NV69)(SCP), MSV000087689 (doi:10.25345/C5BN6F)
 }
 
 \strong{The identification files} were created with the search engine Sage, and
-uploaded on zenodo: \url{DOI:10.5281/zenodo.19370231} following the
+uploaded on zenodo: \href{https://zenodo.org/records/19370231}{DOI:10.5281/zenodo.19370231}
+following the
 experiment's guidelines.
 \itemize{
 \item D19_15um30cm_SC1.sage.tsv

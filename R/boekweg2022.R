@@ -85,7 +85,8 @@
 #' - OR11_20160122_PG_HeLa_CVB3_CT_A.mzML
 #'
 #' **The identification files** were created with the search engine Sage, and
-#' uploaded on zenodo: [DOI:10.5281/zenodo.19370231]() following the
+#' uploaded on zenodo: [DOI:10.5281/zenodo.19370231](https://zenodo.org/records/19370231)
+#' following the
 #' experiment's guidelines.
 #'
 #' - D19_15um30cm_SC1.sage.tsv
