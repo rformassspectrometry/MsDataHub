@@ -2,6 +2,8 @@
 
 # MsDataHub 1.11.2
 
+- Add Boekweg et al. (2022) SCP and bulk mzML files, and Sage identification 
+TSV files (see `?Boekweg2022`). 
 - Add MS3TMT data files.
 
 # MsDataHub 1.11.1
