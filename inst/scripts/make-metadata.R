@@ -80,9 +80,9 @@ metadata <-
             "A subset of 994 spectra from a currenly unpublished MS3 SPS TMT 11-plex experiment",
             "A subset of 565 spectra from a currenly unpublished MS3 SPS TMT 10-plex experiment",
             "Feature data of the MS3TMT11 data",
-            "Boekweg et al. (2022) SCP mzML file. See ?Boekweg2022 for details."
-            "Boekweg et al. (2022) bulk mzML file. See ?Boekweg2022 for details."
-            "Boekweg et al. (2022) Sage PSMs for D19_15um30cm_SC1. See ?Boekweg2022 for details."
+            "Boekweg et al. (2022) SCP mzML file. See ?Boekweg2022 for details.",
+            "Boekweg et al. (2022) bulk mzML file. See ?Boekweg2022 for details.",
+            "Boekweg et al. (2022) Sage PSMs for D19_15um30cm_SC1. See ?Boekweg2022 for details.",
             "Boekweg et al. (2022) Sage PSMs for OR11_20160122_PG_HeLa_CVB3_CT_A. See ?Boekweg2022 for details."
         ),
         BiocVersion = c(
