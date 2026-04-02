@@ -165,8 +165,8 @@ metadata <-
             "https://zenodo.org/records/19127509/files/MS3TMT11.mzML",
             "https://zenodo.org/records/19127509/files/MS3TMT10_01022016_32917-33481.mzML.gz",
             "https://zenodo.org/records/19127509/files/fdms3tmt11.rda",
-            "ftp://massive.ucsd.edu/MSV000087524/ccms_peak/D19_15um30cm_SC1.mzML",
-            "ftp://massive.ucsd.edu/MSV000087689/ccms_peak/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
+            "ftp://massive-ftp.ucsd.edu/v03/MSV000087524/updates/2021-11-01_hboekweg_5ab97297/raw/D19_15um30cm_SC1.mzML",
+            "ftp://massive-ftp.ucsd.edu/v03/MSV000087689/ccms_peak/Hela_bulk/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "https://zenodo.org/records/19370231/files/D19_15um30cm_SC1.sage.tsv",
             "https://zenodo.org/records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
         ),
@@ -345,8 +345,8 @@ metadata <-
             "records/19127509/files/MS3TMT11.mzML",
             "records/19127509/files/MS3TMT10_01022016_32917-33481.mzML.gz",
             "records/19127509/files/fdms3tmt11.rda",
-            "MSV000087524/ccms_peak/D19_15um30cm_SC1.mzML",
-            "MSV000087524/ccms_peak/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
+            "v03/MSV000087524/updates/2021-11-01_hboekweg_5ab97297/raw/D19_15um30cm_SC1.mzML",
+            "v03/MSV000087689/ccms_peak/Hela_bulk/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "records/19370231/files/D19_15um30cm_SC1.tsv",
             "records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.tsv"
         ),
@@ -378,7 +378,7 @@ pkg_source <- file.path(
     ifelse(file.exists("~/dev"), "~/dev", "~/wrk"),
     "MsDataHub"
 )
-
+pkg_source <- here()
 stopifnot(file.exists(pkg_source))
 
 AnnotationHubData::makeAnnotationHubMetadata(
