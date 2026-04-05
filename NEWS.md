@@ -1,5 +1,9 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.3
+
+- Add two more CDF data files from faahKO.
+
 # MsDataHub 1.11.2
 
 - Add MS3TMT data files.

@@ -9,6 +9,8 @@ metadata <-
     data.frame(
         Title = c(
             "ko15.CDF",
+            "ko16.CDF",
+            "ko18.CDF",
             "cptac_a_b_c_peptides.txt",
             "cptac_a_b_peptides.txt",
             "cptac_peptides.txt",
@@ -44,6 +46,8 @@ metadata <-
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
+            "Raw metabolomics MS file in netCDF format. See ?ko16.CDF for details.",
+            "Raw metabolomics MS file in netCDF format. See ?ko18.CDF for details.",
             "Conditions A, B and C of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
             "Conditions A and B of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
             "CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
@@ -78,7 +82,7 @@ metadata <-
             "Feature data of the MS3TMT11 data"
             ),
         BiocVersion = c(
-            rep("3.17", 11),
+            rep("3.17", 13),
             "3.19",
             "3.21",
             "3.21",
@@ -93,7 +97,7 @@ metadata <-
         ),
         Genome = "",
         SourceType = c(
-            "CDF",
+            rep("CDF", 3),
             "TXT",
             "TXT",
             "TXT",
@@ -119,7 +123,7 @@ metadata <-
             "RDA"
        ),
         SourceUrl = c(
-            "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
+            rep("https://bioconductor.org/packages/3.16/data/experiment/html/faahKO.html", 3),
             "https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://raw.githubusercontent.com/statOmics/PDA/data/quantification/fullCptacDatasSetNotForTutorial/peptides.txt",
@@ -155,7 +159,7 @@ metadata <-
         ),
         SourceVersion = rep("1.0", 33),
         Species = c(
-            "Mus musculus",
+            rep("Mus musculus", 3),
             "Saccharomyces cerevisiae",
             "Saccharomyces cerevisiae",
             "Saccharomyces cerevisiae",
@@ -179,7 +183,7 @@ metadata <-
             rep("", 3)
         ),
         TaxonomyId = c(
-            "10090",
+            rep("10090", 3),
             "4932",
             "4932",
             "4932",
@@ -206,7 +210,7 @@ metadata <-
         DataProvider = "",
         Maintainer = "Laurent Gatto <laurent.gatto@uclouvain.be>",
         RDataClass = c(
-            "Spectra",
+            rep("Spectra", 3),
             "data.frame",
             "data.frame",
             "data.frame",
@@ -232,7 +236,7 @@ metadata <-
             "data.frame"
         ),
         DispatchClass = c(
-            "FilePath",
+            rep("FilePath", 3),
             "FilePath",
             "FilePath",
             "FilePath",
@@ -258,7 +262,7 @@ metadata <-
         ## NB: locally, the data are stored in the package's data directory, but
         ## in the Azure cloud, they are located in the package's root directory.
         Location_Prefix = c(
-          rep("", times = 10),
+          rep("", times = 12),
           "https://zenodo.org/",
           "https://zenodo.org/",
           "ftp://massive.ucsd.edu/",
@@ -285,6 +289,8 @@ metadata <-
         ),
          RDataPath = c(
             "MsDataHub/cdf/ko15.CDF",
+            "MsDataHub/cdf/ko16.CDF",
+            "MsDataHub/cdf/ko18.CDF",
             "MsDataHub/cptac/cptac_a_b_c_peptides.txt",
             "MsDataHub/cptac/cptac_a_b_peptides.txt",
             "MsDataHub/cptac/cptac_peptides.txt",
