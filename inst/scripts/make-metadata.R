@@ -42,7 +42,11 @@ metadata <-
             "MRM-standmix-5.mzML",
             "MS3TMT11.mzML",
             "MS3TMT10_01022016_32917-33481.mzML.gz",
-            "fdms3tmt11.rda"
+            "fdms3tmt11.rda",
+            "D19_15um30cm_SC1.mzML",
+            "OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
+            "D19_15um30cm_SC1.sage.tsv",
+            "OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
         ),
         Description = c(
             "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
@@ -79,8 +83,12 @@ metadata <-
             "Multiple Reaction Monitoring mode (MRM) file from a mouse brain sample. See ?MRM fo details",
             "A subset of 994 spectra from a currenly unpublished MS3 SPS TMT 11-plex experiment",
             "A subset of 565 spectra from a currenly unpublished MS3 SPS TMT 10-plex experiment",
-            "Feature data of the MS3TMT11 data"
-            ),
+            "Feature data of the MS3TMT11 data",
+            "Boekweg et al. (2022) SCP mzML file. See ?Boekweg2022 for details.",
+            "Boekweg et al. (2022) bulk mzML file. See ?Boekweg2022 for details.",
+            "Boekweg et al. (2022) Sage PSMs for D19_15um30cm_SC1. See ?Boekweg2022 for details.",
+            "Boekweg et al. (2022) Sage PSMs for OR11_20160122_PG_HeLa_CVB3_CT_A. See ?Boekweg2022 for details."
+        ),
         BiocVersion = c(
             rep("3.17", 13),
             "3.19",
@@ -93,7 +101,8 @@ metadata <-
             "3.22",
             rep("3.22", 10),
             "3.22",
-            rep("3.22", 3)
+            rep("3.22", 3),
+            rep("3.22", 4)
         ),
         Genome = "",
         SourceType = c(
@@ -120,8 +129,12 @@ metadata <-
             "mzML",
             "mzML",
             "mzML",
-            "RDA"
-       ),
+            "RDA",
+            "mzML",
+            "mzML",
+            "TSV",
+            "TSV"
+        ),
         SourceUrl = c(
             rep("https://bioconductor.org/packages/3.16/data/experiment/html/faahKO.html", 3),
             "https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt",
@@ -155,9 +168,13 @@ metadata <-
             "https://zenodo.org/records/18502866/files/MRM-standmix-5.mzML",
             "https://zenodo.org/records/19127509/files/MS3TMT11.mzML",
             "https://zenodo.org/records/19127509/files/MS3TMT10_01022016_32917-33481.mzML.gz",
-            "https://zenodo.org/records/19127509/files/fdms3tmt11.rda"
+            "https://zenodo.org/records/19127509/files/fdms3tmt11.rda",
+            "ftp://massive-ftp.ucsd.edu/v03/MSV000087524/updates/2021-11-01_hboekweg_5ab97297/raw/D19_15um30cm_SC1.mzML",
+            "ftp://massive-ftp.ucsd.edu/v03/MSV000087689/ccms_peak/Hela_bulk/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
+            "https://zenodo.org/records/19370231/files/D19_15um30cm_SC1.sage.tsv",
+            "https://zenodo.org/records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
         ),
-        SourceVersion = rep("1.0", 33),
+        SourceVersion = rep("1.0", 37),
         Species = c(
             rep("Mus musculus", 3),
             "Saccharomyces cerevisiae",
@@ -180,7 +197,8 @@ metadata <-
             "",
             rep("", 10),
             "Mus musculus",
-            rep("", 3)
+            rep("", 3),
+            rep("Homo sapiens", 4)
         ),
         TaxonomyId = c(
             rep("10090", 3),
@@ -204,7 +222,8 @@ metadata <-
             "",
             rep("", 10),
             "10090",
-            rep("", 3)
+            rep("", 3),
+            rep("9606", 4)
         ),
         Coordinate_1_based = "",
         DataProvider = "",
@@ -233,6 +252,10 @@ metadata <-
             "Spectra",
             "Spectra",
             "Spectra",
+            "data.frame",
+            "Spectra",
+            "Spectra",
+            "data.frame",
             "data.frame"
         ),
         DispatchClass = c(
@@ -257,37 +280,42 @@ metadata <-
             "FilePath",
             rep("FilePath", 10),
             "FilePath",
-            rep("FilePath", 3)
+            rep("FilePath", 3),
+            rep("FilePath", 4)
         ),
         ## NB: locally, the data are stored in the package's data directory, but
         ## in the Azure cloud, they are located in the package's root directory.
         Location_Prefix = c(
-          rep("", times = 12),
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "ftp://massive.ucsd.edu/",
-          "ftp://massive.ucsd.edu/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/",
-          "https://zenodo.org/"
+            rep("", times = 12),
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "ftp://massive.ucsd.edu/",
+            "ftp://massive.ucsd.edu/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "https://zenodo.org/",
+            "ftp://massive.ucsd.edu/",
+            "ftp://massive.ucsd.edu/",
+            "https://zenodo.org/",
+            "https://zenodo.org/"
         ),
-         RDataPath = c(
+        RDataPath = c(
             "MsDataHub/cdf/ko15.CDF",
             "MsDataHub/cdf/ko16.CDF",
             "MsDataHub/cdf/ko18.CDF",
@@ -322,9 +350,13 @@ metadata <-
             "records/18502866/files/MRM-standmix-5.mzML",
             "records/19127509/files/MS3TMT11.mzML",
             "records/19127509/files/MS3TMT10_01022016_32917-33481.mzML.gz",
-            "records/19127509/files/fdms3tmt11.rda"
-         ),
-       Tags = ""
+            "records/19127509/files/fdms3tmt11.rda",
+            "v03/MSV000087524/updates/2021-11-01_hboekweg_5ab97297/raw/D19_15um30cm_SC1.mzML",
+            "v03/MSV000087689/ccms_peak/Hela_bulk/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
+            "records/19370231/files/D19_15um30cm_SC1.tsv",
+            "records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.tsv"
+        ),
+        Tags = ""
     )
 
 
@@ -335,20 +367,27 @@ metadata <-
 metadata[["Title"]] <- make.names(metadata[["Title"]])
 
 
-if (!grepl("MsDataHub/inst/scripts", getwd()))
+if (!grepl("MsDataHub/inst/scripts", getwd())) {
     stop("Run from MsDataHub/inst/scripts")
+}
 
 library(here)
-write.csv(metadata, file = here("inst", "extdata", "metadata.csv"),
-          row.names = FALSE)
+write.csv(metadata,
+    file = here("inst", "extdata", "metadata.csv"),
+    row.names = FALSE
+)
 
 # pkg_source <- file.path(ifelse(file.exists("~/wrk"), "~/wrk", "~/dev"),
 #                         "MsDataHub")
 
-pkg_source <- file.path(ifelse(file.exists("~/dev"), "~/dev", "~/wrk"),
-                        "MsDataHub")
-
+pkg_source <- file.path(
+    ifelse(file.exists("~/dev"), "~/dev", "~/wrk"),
+    "MsDataHub"
+)
+pkg_source <- here()
 stopifnot(file.exists(pkg_source))
 
-AnnotationHubData::makeAnnotationHubMetadata(pathToPackage = pkg_source,
-                                             fileName = "metadata.csv")
+AnnotationHubData::makeAnnotationHubMetadata(
+    pathToPackage = pkg_source,
+    fileName = "metadata.csv"
+)
