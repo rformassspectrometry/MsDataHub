@@ -306,8 +306,8 @@ metadata <-
             "https://zenodo.org/",
             "https://zenodo.org/",
             "https://zenodo.org/",
-            "ftp://massive.ucsd.edu/",
-            "ftp://massive.ucsd.edu/",
+            "ftp://massive-ftp.ucsd.edu/",
+            "ftp://massive-ftp.ucsd.edu/",
             "https://zenodo.org/",
             "https://zenodo.org/"
         ),
