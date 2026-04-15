@@ -1,5 +1,10 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.4
+- Add DDA and DIA proteomics data to illustrate
+  `QFeatures::readQFeatures()`.
+- Various fixes.
+
 # MsDataHub 1.11.3
 
 - Add Boekweg et al. (2022) SCP and bulk mzML files, and Sage
