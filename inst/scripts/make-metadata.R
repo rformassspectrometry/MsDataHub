@@ -386,7 +386,7 @@ miscDdaDiaData <-
     Genome = "",
     SourceType = c("TSV", "TSV", "TXT", "TSV", "TSV", "TSV", "TSV", "TSV",
                    "TSV", "TSV", "TSV", "TSV", "TSV", "TXT", "TXT", "TXT",
-                   "CSV", "YSV", "TSV", "Parquet", "TSV"),
+                   "CSV", "TSV", "TSV", "Parquet", "TSV"),
     SourceUrl = c(
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction1_psm.tsv",
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction2_psm.tsv",
