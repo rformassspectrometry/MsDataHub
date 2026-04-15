@@ -26,15 +26,15 @@
 ##'
 ##' @description
 ##'
-##' Various DDA and DIA experiments that were processed with various software to
-##' illustrate the `QFeatures::readQFeatures()` function.
+##' Various DDA and DIA experiments that were processed with different software
+##' to illustrate the `QFeatures::readQFeatures()` function:
 ##'
 ##' - `vanPuyvelde_2022_LFQ_*`: DDA and DIA data from van Puyvelde et
-##'    al. (2022). LFQ benchmarking experiment processed with different
-##'    software.
+##'    al. (2022). LFQ benchmarking experiment.
+##'
 ##' - `Christoforou_2016_TMT_DDA_*`: data from Christoforou et
-##'   al. (2016). hyperLOPIT spatial proteomics experiment processed with
-##'   different software.
+##'    al. (2016). hyperLOPIT spatial proteomics experiment.
+##'
 ##' - `Derks_2022_plex_DIA_DIANN_report_subset.tsv`: subset from Derks et
 ##'    al. (2022) plexDIA data.
 ##'
