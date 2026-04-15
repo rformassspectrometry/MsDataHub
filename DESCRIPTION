@@ -15,7 +15,12 @@ Authors@R:
              family = "Rainer",
              email = "Johannes.Rainer@eurac.edu",
              role = "aut",
-             comment = c(ORCID = "0000-0002-6977-7147")))
+             comment = c(ORCID = "0000-0002-6977-7147")),
+      person(given = "Guillaume",
+             family = "Deflandre",
+             email = "guillaume.deflandre@uclouvain.be",
+             role = "ctb",
+             comment = c(ORCID = "0009-0008-1257-2416")))
 Description: The MsDataHub package uses the ExperimentHub
              infrastructure to distribute raw mass spectrometry data
              files, peptide spectrum matches or quantitative data from
