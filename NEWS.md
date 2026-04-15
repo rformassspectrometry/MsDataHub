@@ -1,5 +1,9 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.4
+
+- Add two more CDF data files from faahKO.
+
 # MsDataHub 1.11.3
 
 - Add Boekweg et al. (2022) SCP and bulk mzML files, and Sage identification

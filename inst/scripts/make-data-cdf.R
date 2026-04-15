@@ -1,11 +1,11 @@
 ## From director cdf: ko15.CDF
 
-if (!require("msdata"))
-    BiocManager::install("msdata")
+if (!require("faahKO"))
+    BiocManager::install("faahKO")
 
 ## files to be copied
-fls <- dir(system.file("cdf", package = "msdata"), full.name = TRUE)
-fls <- fls[basename(fls) %in% "ko15.CDF"]
+fls <- dir(system.file("cdf", package = "faahKO"), full.name = TRUE)
+fls <- fls[basename(fls) %in% c("ko15.CDF", "ko16.CDF", "ko18.CDF")]
 
 ## destination
 destdir <- "../../data/cdf"

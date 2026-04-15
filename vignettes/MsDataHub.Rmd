@@ -136,7 +136,7 @@ cptac_a_b_peptides.txt()
 ## FAAH KO
 
 - Type: Raw MS data, in netCDF format.
-- File: `ko15.CDF`
+- File: `ko15.CDF`, `ko16.CDF` and `ko18.CDF`
 - More details: `?cdf`
 
 Load with
