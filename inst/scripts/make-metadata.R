@@ -365,7 +365,6 @@ miscDdaDiaData <-
         "Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt",
         "Christoforou_2016_TMT_DDA_sage_results.sage.tsv",
         "Christoforou_2016_TMT_DDA_sage_tmt.tsv",
-        "Derks_2022_plex_DIA_DIANN_report-subset.tsv",
         "Derks_2022_plex_DIA_DIANN_report_subset.tsv",
         "vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv",
         "vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv",
@@ -384,16 +383,15 @@ miscDdaDiaData <-
     Description = "Various DDA and DIA files to illustrate QFeatures::readQFeatures()",
     BiocVersion = "3.23",
     Genome = "",
-    SourceType = c("TSV", "TSV", "TXT", "TSV", "TSV", "TSV", "TSV", "TSV",
-                   "TSV", "TSV", "TSV", "TSV", "TSV", "TXT", "TXT", "TXT",
-                   "CSV", "TSV", "TSV", "Parquet", "TSV"),
+    SourceType = c("TSV", "TSV", "TXT", "TSV", "TSV", "TSV", "TSV",
+                   "TSV", "TSV", "TSV", "TSV", "TSV", "TXT", "TXT",
+                   "TXT", "CSV", "TSV", "TSV", "Parquet", "TSV"),
     SourceUrl = c(
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction1_psm.tsv",
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction2_psm.tsv",
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt",
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_sage_results.sage.tsv",
         "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_sage_tmt.tsv",
-        "https://zenodo.org/records/19137577/files/Derks_2022_plex_DIA_DIANN_report-subset.tsv",
         "https://zenodo.org/records/19137577/files/Derks_2022_plex_DIA_DIANN_report_subset.tsv",
         "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv",
         "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv",
@@ -412,11 +410,11 @@ miscDdaDiaData <-
     SourceVersion = "1.0",
     Species = c(
         rep("Mus musculus", 5), ## Christoforou (2016)
-        rep(NA, 2),   ## Derks (2022) - mixed species
+        rep(NA, 1),   ## Derks (2022) - mixed species
         rep(NA, 14)), ## vanPuyvelde (2022) - mixed species
     TaxonomyId = c(
         rep("10090", 5),
-        rep("", 2 + 14)),
+        rep("", 1 + 14)),
     Coordinate_1_based = "",
     DataProvider = "",
     Maintainer = "Laurent Gatto <laurent.gatto@uclouvain.be>",
@@ -429,7 +427,6 @@ miscDdaDiaData <-
         "records/19137577/files/Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt",
         "records/19137577/files/Christoforou_2016_TMT_DDA_sage_results.sage.tsv",
         "records/19137577/files/Christoforou_2016_TMT_DDA_sage_tmt.tsv",
-        "records/19137577/files/Derks_2022_plex_DIA_DIANN_report-subset.tsv",
         "records/19137577/files/Derks_2022_plex_DIA_DIANN_report_subset.tsv",
         "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv",
         "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv",

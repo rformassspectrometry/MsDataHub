@@ -7,7 +7,6 @@
 ##' @aliases Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt
 ##' @aliases Christoforou_2016_TMT_DDA_sage_results.sage.tsv
 ##' @aliases Christoforou_2016_TMT_DDA_sage_tmt.tsv
-##' @aliases Derks_2022_plex_DIA_DIANN_report-subset.tsv
 ##' @aliases Derks_2022_plex_DIA_DIANN_report_subset.tsv
 ##' @aliases vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv
 ##' @aliases vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv

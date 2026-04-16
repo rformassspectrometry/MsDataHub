@@ -7,7 +7,6 @@
 \alias{Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt}
 \alias{Christoforou_2016_TMT_DDA_sage_results.sage.tsv}
 \alias{Christoforou_2016_TMT_DDA_sage_tmt.tsv}
-\alias{Derks_2022_plex_DIA_DIANN_report-subset.tsv}
 \alias{Derks_2022_plex_DIA_DIANN_report_subset.tsv}
 \alias{vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv}
 \alias{vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv}
