@@ -1,9 +1,15 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.4
+- Add DDA and DIA proteomics data to illustrate
+  `QFeatures::readQFeatures()`.
+- Various fixes.
+
 # MsDataHub 1.11.3
 
-- Add Boekweg et al. (2022) SCP and bulk mzML files, and Sage identification
-  TSV files (see `?Boekweg2022`) and added Guillaume Deflandre as contributor.
+- Add Boekweg et al. (2022) SCP and bulk mzML files, and Sage
+  identification TSV files (see `?Boekweg2022`)
+- Added Guillaume Deflandre as contributor.
 
 # MsDataHub 1.11.2
 

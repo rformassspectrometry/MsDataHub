@@ -93,12 +93,12 @@ metadata <-
             "3.21",
             "3.21",
             "3.21",
-            "3.22",
-            "3.22",
-            rep("3.22", 10),
-            "3.22",
-            rep("3.22", 3),
-            rep("3.22", 4)
+            "3.23",
+            "3.23",
+            rep("3.23", 10),
+            "3.23",
+            rep("3.23", 3),
+            rep("3.23", 4)
         ),
         Genome = "",
         SourceType = c(
@@ -352,6 +352,100 @@ metadata <-
         ),
         Tags = ""
     )
+
+
+## Metadata for MS-based DDA and DIA datasets for the MsDataHub package files
+## (https://zenodo.org/records/19137577).
+
+miscDdaDiaData <-
+    data.frame(
+    Title = c(
+        "Christoforou_2016_TMT_DDA_FragPipe_Fraction1_psm.tsv",
+        "Christoforou_2016_TMT_DDA_FragPipe_Fraction2_psm.tsv",
+        "Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt",
+        "Christoforou_2016_TMT_DDA_sage_results.sage.tsv",
+        "Christoforou_2016_TMT_DDA_sage_tmt.tsv",
+        "Derks_2022_plex_DIA_DIANN_report_subset.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_FragPipe_A_3_psm.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_FragPipe_B_1_psm.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_FragPipe_B_2_psm.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_FragPipe_B_3_psm.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_MaxQuant_evidence.txt",
+        "vanPuyvelde_2022_LFQ_DDA_MaxQuant_peptides.txt",
+        "vanPuyvelde_2022_LFQ_DDA_MaxQuant_proteinGroups.txt",
+        "vanPuyvelde_2022_LFQ_DDA_PEAKS_LFQ_report.csv",
+        "vanPuyvelde_2022_LFQ_DDA_sage_lfq.tsv",
+        "vanPuyvelde_2022_LFQ_DDA_sage_results.sage.tsv",
+        "vanPuyvelde_2022_LFQ_DIA_DIANN_report.parquet",
+        "vanPuyvelde_2022_LFQ_DIA_DIANN_report.tsv"),
+    Description = "Various DDA and DIA files to illustrate QFeatures::readQFeatures()",
+    BiocVersion = "3.23",
+    Genome = "",
+    SourceType = c("TSV", "TSV", "TXT", "TSV", "TSV", "TSV", "TSV",
+                   "TSV", "TSV", "TSV", "TSV", "TSV", "TXT", "TXT",
+                   "TXT", "CSV", "TSV", "TSV", "Parquet", "TSV"),
+    SourceUrl = c(
+        "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction1_psm.tsv",
+        "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction2_psm.tsv",
+        "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt",
+        "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_sage_results.sage.tsv",
+        "https://zenodo.org/records/19137577/files/Christoforou_2016_TMT_DDA_sage_tmt.tsv",
+        "https://zenodo.org/records/19137577/files/Derks_2022_plex_DIA_DIANN_report_subset.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_3_psm.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_B_1_psm.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_B_2_psm.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_B_3_psm.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_MaxQuant_evidence.txt",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_MaxQuant_peptides.txt",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_MaxQuant_proteinGroups.txt",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_PEAKS_LFQ_report.csv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_sage_lfq.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DDA_sage_results.sage.tsv",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DIA_DIANN_report.parquet",
+        "https://zenodo.org/records/19137577/files/vanPuyvelde_2022_LFQ_DIA_DIANN_report.tsv"),
+    SourceVersion = "1.0",
+    Species = c(
+        rep("Mus musculus", 5), ## Christoforou (2016)
+        rep(NA, 1),   ## Derks (2022) - mixed species
+        rep(NA, 14)), ## vanPuyvelde (2022) - mixed species
+    TaxonomyId = c(
+        rep("10090", 5),
+        rep("", 1 + 14)),
+    Coordinate_1_based = "",
+    DataProvider = "",
+    Maintainer = "Laurent Gatto <laurent.gatto@uclouvain.be>",
+    RDataClass = "data.frame",
+    DispatchClass = "FilePath",
+    Location_Prefix = "https://zenodo.org/",
+    RDataPath = c(
+        "records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction1_psm.tsv",
+        "records/19137577/files/Christoforou_2016_TMT_DDA_FragPipe_Fraction2_psm.tsv",
+        "records/19137577/files/Christoforou_2016_TMT_DDA_MaxQuant_evidence.txt",
+        "records/19137577/files/Christoforou_2016_TMT_DDA_sage_results.sage.tsv",
+        "records/19137577/files/Christoforou_2016_TMT_DDA_sage_tmt.tsv",
+        "records/19137577/files/Derks_2022_plex_DIA_DIANN_report_subset.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_1_psm.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_2_psm.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_A_3_psm.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_B_1_psm.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_B_2_psm.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_FragPipe_B_3_psm.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_MaxQuant_evidence.txt",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_MaxQuant_peptides.txt",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_MaxQuant_proteinGroups.txt",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_PEAKS_LFQ_report.csv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_sage_lfq.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DDA_sage_results.sage.tsv",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DIA_DIANN_report.parquet",
+        "records/19137577/files/vanPuyvelde_2022_LFQ_DIA_DIANN_report.tsv"),
+    Tags = "")
+
+
+metadata <- rbind(metadata, miscDdaDiaData)
 
 
 ## The experiment titles are conferted into functions to directly
