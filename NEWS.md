@@ -1,5 +1,8 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.5
+- Fix metadata
+
 # MsDataHub 1.11.4
 - Add DDA and DIA proteomics data to illustrate
   `QFeatures::readQFeatures()`.
