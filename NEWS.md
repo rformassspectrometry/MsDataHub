@@ -1,5 +1,9 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.6
+
+- Move the *Pest Mix* and *sciex* example files to Zenodo.
+
 # MsDataHub 1.11.5
 - Fix metadata
 
