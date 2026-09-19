@@ -1,28 +1,40 @@
-# MsDataHub 1.11
+# MsDataHub 1.13
 
-# MsDataHub 1.11.6
+## MsDataHub 1.13.2
 
 - Move the *Pest Mix* and *sciex* example files to Zenodo.
 
-# MsDataHub 1.11.5
-- Fix metadata
+## MsDataHub 1.13.1
 
-# MsDataHub 1.11.4
+- Move Ai2025, OR11 and D19 files to Zenodo (10.5281/zenodo.21900721).
+
+## MsDataHub 1.13.0
+
+- New devel version.
+
+# MsDataHub 1.11
+
+## MsDataHub 1.11.5
+
+- Fix metadata.
+
+## MsDataHub 1.11.4
+
 - Add DDA and DIA proteomics data to illustrate
   `QFeatures::readQFeatures()`.
 - Various fixes.
 
-# MsDataHub 1.11.3
+## MsDataHub 1.11.3
 
 - Add Boekweg et al. (2022) SCP and bulk mzML files, and Sage
   identification TSV files (see `?Boekweg2022`)
 - Added Guillaume Deflandre as contributor.
 
-# MsDataHub 1.11.2
+## MsDataHub 1.11.2
 
 - Add MS3TMT data files.
 
-# MsDataHub 1.11.1
+## MsDataHub 1.11.1
 
 - Add CE-MS test data files (see PR #11).
 - Add description of the data sets to the package vignette.

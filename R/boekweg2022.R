@@ -94,6 +94,9 @@
 #'
 #' Dataset license: CC0 1.0 Universal (CC0 1.0)
 #'
+#' - The data are also available (and retrieved) from Zenodo:
+#' 10.5281/zenodo.21900721
+#'
 #' @references
 #'
 #' Boekweg, Hannah, Daisha Van Der Watt, Thy Truong, S. Madisyn Johnston,

@@ -27,6 +27,10 @@ MSV000094438 (doi:10.25345/C5T727S7Q) are redistruted here are:
 }
 
 Dataset license: CC0 1.0 Universal (CC0 1.0)
+\itemize{
+\item The data are also available (and retrieved) from Zenodo:
+10.5281/zenodo.21900721
+}
 }
 \references{
 Ai, Lizhuo, Aleksandra Binek, Vladimir Zhemkov, Jae Hyung Cho, Ali Haghani,
