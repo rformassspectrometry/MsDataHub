@@ -6,7 +6,7 @@
 ##'
 ##' These files represent data from reverse-phased LC-MS/MS runs on the
 ##' Agilent Pesticide mix obtained from a Sciex 6600 Triple ToF operated
-##' either in Sequential Window Acquisition of all THeoretical mass spectra
+##' either in Sequential Window Acquisition of all Theoretical mass spectra
 ##' (SWATH) or Data Dependent Acquisition (DDA) acquisition mode.
 ##'
 ##' The data files are:

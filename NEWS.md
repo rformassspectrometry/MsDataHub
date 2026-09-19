@@ -1,5 +1,9 @@
 # MsDataHub 1.13
 
+## MsDataHub 1.13.2
+
+- Move the *Pest Mix* and *sciex* example files to Zenodo.
+
 ## MsDataHub 1.13.1
 
 - Move Ai2025, OR11 and D19 files to Zenodo (10.5281/zenodo.21900721).
