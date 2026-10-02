@@ -44,10 +44,21 @@ metadata <-
             "D19_15um30cm_SC1.mzML",
             "OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "D19_15um30cm_SC1.sage.tsv",
-            "OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
+            "OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv",
+            "ko16.CDF",
+            "ko18.CDF",
+            "ko19.CDF",
+            "ko21.CDF",
+            "ko22.CDF",
+            "wt15.CDF",
+            "wt16.CDF",
+            "wt18.CDF",
+            "wt19.CDF",
+            "wt21.CDF",
+            "wt22.CDF"
         ),
         Description = c(
-            "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. KO 15 sample. See ?faahKO.CDF for details.",
             "Conditions A, B and C of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
             "Conditions A and B of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
             "CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
@@ -83,7 +94,18 @@ metadata <-
             "Boekweg et al. (2022) SCP mzML file. See ?Boekweg2022 for details.",
             "Boekweg et al. (2022) bulk mzML file. See ?Boekweg2022 for details.",
             "Boekweg et al. (2022) Sage PSMs for D19_15um30cm_SC1. See ?Boekweg2022 for details.",
-            "Boekweg et al. (2022) Sage PSMs for OR11_20160122_PG_HeLa_CVB3_CT_A. See ?Boekweg2022 for details."
+            "Boekweg et al. (2022) Sage PSMs for OR11_20160122_PG_HeLa_CVB3_CT_A. See ?Boekweg2022 for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. KO 16 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. KO 18 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. KO 19 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. KO 21 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. KO 22 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. WT 15 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. WT 16 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. WT 18 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. WT 19 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. WT 21 sample. See ?faahKO for details.",
+            "Saghatelian et al. (2004) FAAH knockout LC/MS data. Raw metabolomics MS file in netCDF format. WT 22 sample. See ?faahKO for details."
         ),
         BiocVersion = c(
             rep("3.17", 11),
@@ -98,7 +120,8 @@ metadata <-
             rep("3.23", 10),
             "3.23",
             rep("3.23", 3),
-            rep("3.23", 4)
+            rep("3.23", 4),
+            rep("3.23", 11)
         ),
         Genome = "",
         SourceType = c(
@@ -129,10 +152,11 @@ metadata <-
             "mzML",
             "mzML",
             "TSV",
-            "TSV"
+            "TSV",
+            rep("CDF", 11)
         ),
         SourceUrl = c(
-            "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
+            "https://zenodo.org/records/19606563/files/ko15.CDF",
             "https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://raw.githubusercontent.com/statOmics/PDA/data/quantification/fullCptacDatasSetNotForTutorial/peptides.txt",
@@ -168,9 +192,20 @@ metadata <-
             "https://zenodo.org/records/21900721/files/D19_15um30cm_SC1.mzML",
             "https://zenodo.org/records/21900721/files/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "https://zenodo.org/records/19370231/files/D19_15um30cm_SC1.sage.tsv",
-            "https://zenodo.org/records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
+            "https://zenodo.org/records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv",
+            "https://zenodo.org/records/19606563/files/ko16.CDF",
+            "https://zenodo.org/records/19606563/files/ko18.CDF",
+            "https://zenodo.org/records/19606563/files/ko19.CDF",
+            "https://zenodo.org/records/19606563/files/ko21.CDF",
+            "https://zenodo.org/records/19606563/files/ko22.CDF",
+            "https://zenodo.org/records/19606563/files/wt15.CDF",
+            "https://zenodo.org/records/19606563/files/wt16.CDF",
+            "https://zenodo.org/records/19606563/files/wt18.CDF",
+            "https://zenodo.org/records/19606563/files/wt19.CDF",
+            "https://zenodo.org/records/19606563/files/wt21.CDF",
+            "https://zenodo.org/records/19606563/files/wt22.CDF"
         ),
-        SourceVersion = rep("1.0", 37),
+        SourceVersion = rep("1.0", 48),
         Species = c(
             "Mus musculus",
             "Saccharomyces cerevisiae",
@@ -194,7 +229,8 @@ metadata <-
             rep("", 10),
             "Mus musculus",
             rep("", 3),
-            rep("Homo sapiens", 4)
+            rep("Homo sapiens", 4),
+            rep("Mus musculus", 11)
         ),
         TaxonomyId = c(
             "10090",
@@ -219,7 +255,8 @@ metadata <-
             rep("", 10),
             "10090",
             rep("", 3),
-            rep("9606", 4)
+            rep("9606", 4),
+            rep("10090", 11)
         ),
         Coordinate_1_based = "",
         DataProvider = "",
@@ -252,7 +289,8 @@ metadata <-
             "Spectra",
             "Spectra",
             "data.frame",
-            "data.frame"
+            "data.frame",
+            rep("Spectra", 11)
         ),
         DispatchClass = c(
             "FilePath",
@@ -277,12 +315,14 @@ metadata <-
             rep("FilePath", 10),
             "FilePath",
             rep("FilePath", 3),
-            rep("FilePath", 4)
+            rep("FilePath", 4),
+            rep("FilePath", 11)
         ),
         ## NB: locally, the data are stored in the package's data directory, but
         ## in the Azure cloud, they are located in the package's root directory.
         Location_Prefix = c(
-            rep("", times = 6),
+            "https://zenodo.org/",
+            rep("", times = 5),
             "https://zenodo.org/",
             "https://zenodo.org/",
             "https://zenodo.org/",
@@ -313,10 +353,11 @@ metadata <-
             "https://zenodo.org/",
             "https://zenodo.org/",
             "https://zenodo.org/",
-            "https://zenodo.org/"
+            "https://zenodo.org/",
+            rep("https://zenodo.org/", 11)
         ),
         RDataPath = c(
-            "MsDataHub/cdf/ko15.CDF",
+            "records/19606563/files/ko15.CDF",
             "MsDataHub/cptac/cptac_a_b_c_peptides.txt",
             "MsDataHub/cptac/cptac_a_b_peptides.txt",
             "MsDataHub/cptac/cptac_peptides.txt",
@@ -352,7 +393,18 @@ metadata <-
             "records/21900721/files/D19_15um30cm_SC1.mzML",
             "records/21900721/files/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "records/19370231/files/D19_15um30cm_SC1.sage.tsv",
-            "records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
+            "records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv",
+            "records/19606563/files/ko16.CDF",
+            "records/19606563/files/ko18.CDF",
+            "records/19606563/files/ko19.CDF",
+            "records/19606563/files/ko21.CDF",
+            "records/19606563/files/ko22.CDF",
+            "records/19606563/files/wt15.CDF",
+            "records/19606563/files/wt16.CDF",
+            "records/19606563/files/wt18.CDF",
+            "records/19606563/files/wt19.CDF",
+            "records/19606563/files/wt21.CDF",
+            "records/19606563/files/wt22.CDF"
         ),
         Tags = ""
     )

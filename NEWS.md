@@ -1,5 +1,9 @@
 # MsDataHub 1.13
 
+## MsDataHub 1.13.3
+
+- Add all files from the *faahKO* R package.
+
 ## MsDataHub 1.13.2
 
 - Move the *Pest Mix* and *sciex* example files to Zenodo.
