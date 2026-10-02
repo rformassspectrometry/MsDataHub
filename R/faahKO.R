@@ -9,8 +9,8 @@
 #' @description
 #'
 #' Data from the article Assignment of endogenous substrates to enzymes by
-#' global metabolite profiling Biochemistry; 2004; 43(45) by Saghatelian et al.
-#' [2004]. LC-MS data from 6 FAAHKO knock-out and 6 wild type mice acquired in
+#' global metabolite profiling Biochemistry; 2004; 43(45) by Saghatelian et al..
+#' LC-MS data from 6 FAAHKO knock-out and 6 wild type mice acquired in
 #' positive ionization mode. Data is subset to an m/z range of 200-600 and
 #' retention time range from 2500-4500 seconds. Data files are provided in
 #' NetCDF format. Text files provide information on individual samples (*s_*),
