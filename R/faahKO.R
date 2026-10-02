@@ -32,16 +32,16 @@
 #'
 #' @export
 faahKO <- function() {
-    c(ko15(),
-      ko16(),
-      ko18(),
-      ko19(),
-      ko21(),
-      ko22(),
-      wt15(),
-      wt16(),
-      wt18(),
-      wt19(),
-      wt21(),
-      wt22())
+    c(ko15.CDF(),
+      ko16.CDF(),
+      ko18.CDF(),
+      ko19.CDF(),
+      ko21.CDF(),
+      ko22.CDF(),
+      wt15.CDF(),
+      wt16.CDF(),
+      wt18.CDF(),
+      wt19.CDF(),
+      wt21.CDF(),
+      wt22.CDF())
 }
