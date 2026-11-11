@@ -1,5 +1,9 @@
 # MsDataHub 1.13
 
+## MsDataHub 1.13.4
+
+- Suppress messages for the `faahKO()` function.
+
 ## MsDataHub 1.13.3
 
 - Add all files from the *faahKO* R package.
