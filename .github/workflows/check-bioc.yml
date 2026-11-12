@@ -215,17 +215,17 @@ jobs:
           sessioninfo::session_info(pkgs, include_base = TRUE)
         shell: Rscript {0}
 
-      ## - name: Check
-      ##   env:
-      ##     _R_CHECK_CRAN_INCOMING_: false
-      ##   run: |
-      ##     rcmdcheck::rcmdcheck(
-      ##         args = c("--no-build-vignettes", "--no-manual", "--timings"),
-      ##         build_args = c("--no-manual", "--no-resave-data"),
-      ##         error_on = "warning",
-      ##         check_dir = "check"
-      ##     )
-      ##   shell: Rscript {0}
+      - name: Check
+        env:
+          _R_CHECK_CRAN_INCOMING_: false
+        run: |
+          rcmdcheck::rcmdcheck(
+              args = c("--no-build-vignettes", "--no-manual", "--timings"),
+              build_args = c("--no-manual", "--no-resave-data"),
+              error_on = "warning",
+              check_dir = "check"
+          )
+        shell: Rscript {0}
 
       - name: Reveal testthat details
         if:  env.has_testthat == 'true'
