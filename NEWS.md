@@ -3,6 +3,7 @@
 ## MsDataHub 1.13.4
 
 - Suppress messages for the `faahKO()` function.
+- Use GPL-3 and CC BY-SA licenses.
 
 ## MsDataHub 1.13.3
 

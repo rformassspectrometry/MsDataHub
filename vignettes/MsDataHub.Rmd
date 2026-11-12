@@ -298,6 +298,12 @@ Example MS3 SPS TMT data.
    may require your input to make sure the documentation file is
    complete.
 
+# License
+
+This vignette is distributed under a [CC BY-SA
+license](https://creativecommons.org/licenses/by-sa/4.0/).
+
+
 # Session information {-}
 
 ```{r sessioninfo, echo=FALSE}

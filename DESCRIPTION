@@ -25,7 +25,7 @@ Description: The MsDataHub package uses the ExperimentHub
              infrastructure to distribute raw mass spectrometry data
              files, peptide spectrum matches or quantitative data from
              proteomics and metabolomics experiments.
-License: Artistic-2.0
+License: GPL-3
 BugReports: https://github.com/RforMassSpectrometry/MsDataHub/issues
 URL: https://rformassspectrometry.github.io/MsDataHub
 Imports:
